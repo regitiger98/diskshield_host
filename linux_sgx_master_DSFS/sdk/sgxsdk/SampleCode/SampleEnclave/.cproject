@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.settings">
+        		
+        <cconfiguration id="com.intel.sgx.SGXtoolChain.539509311">
+            			
+            <storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.intel.sgx.SGXtoolChain.539509311" moduleId="org.eclipse.cdt.core.settings" name="Default">
+                				
+                <externalSettings/>
+                				
+                <extensions>
+                    					
+                    <extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.autotools.core.ErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    					
+                    <extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+                    				
+                </extensions>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+                				
+                <configuration buildProperties="" id="com.intel.sgx.SGXtoolChain.539509311" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+                    					
+                    <folderInfo id="com.intel.sgx.SGXtoolChain.539509311.380118474" name="/" resourcePath="">
+                        						
+                        <toolChain id="com.intel.sgx.SGXtoolChain.373772123" name="Intel(R) SGX" superClass="com.intel.sgx.SGXtoolChain">
+                            							
+                            <targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.intel.sgx.targetEnclave.1790410944" isAbstract="false" superClass="com.intel.sgx.targetEnclave"/>
+                            							
+                            <builder id="com.intel.sgx.sgxbuilder.1455294232" managedBuildOn="false" name="Intel(R) Software Guard Extensions Linux Builder.Default" superClass="com.intel.sgx.sgxbuilder"/>
+                            							
+                            <tool id="com.intel.sgx.compiler.406482267" name="Intel(R) SGX" superClass="com.intel.sgx.compiler"/>
+                            						
+                        </toolChain>
+                        					
+                    </folderInfo>
+                    				
+                </configuration>
+                			
+            </storageModule>
+            			
+            <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+            		
+        </cconfiguration>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="scannerConfiguration">
+        		
+        <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+        		
+        <scannerConfigBuildInfo instanceId="com.intel.sgx.configuration.HW.Release;com.intel.sgx.configuration.HW.Release.1347223665;com.intel.sgx.compiler.945246695;com.intel.sgx.inputType.593431891">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.sgx.SGXPerProjectProfile"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="com.intel.sgx.configuration.Sim.Debug;com.intel.sgx.configuration.Sim.Debug.935873960;com.intel.sgx.compiler.81269967;com.intel.sgx.inputType.742388855">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.sgx.SGXPerProjectProfile"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="com.intel.sgx.configuration.Sim.Release;com.intel.sgx.configuration.Sim.Release.428839196;com.intel.sgx.compiler.301453474;com.intel.sgx.inputType.596141238">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.sgx.SGXPerProjectProfile"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.1609650460;cdt.managedbuild.config.gnu.exe.debug.1609650460.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1644119147;cdt.managedbuild.tool.gnu.c.compiler.input.938348551">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.1394873887;cdt.managedbuild.config.gnu.exe.release.1394873887.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.2035356548;cdt.managedbuild.tool.gnu.c.compiler.input.793813290">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="com.intel.sgx.configuration.HW.Debug;com.intel.sgx.configuration.HW.Debug.562917509;com.intel.sgx.compiler.1898704176;com.intel.sgx.inputType.393162412">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.sgx.SGXPerProjectProfile"/>
+            		
+        </scannerConfigBuildInfo>
+        		
+        <scannerConfigBuildInfo instanceId="com.intel.sgx.configuration.HW.Prerelease;com.intel.sgx.configuration.HW.Prerelease.2074448686;com.intel.sgx.compiler.845441552;com.intel.sgx.inputType.1555926498">
+            			
+            <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.intel.sgx.SGXPerProjectProfile"/>
+            		
+        </scannerConfigBuildInfo>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="cdtBuildSystem" version="4.0.0">
+        		
+        <project id="SampleEnclave.null.730304098" name="SampleEnclave"/>
+        	
+    </storageModule>
+    	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    
+</cproject>

@@ -1,0 +1,21 @@
+Big File I/O Evaluation
+16 threads 64MB I/O evaluation
+EVAL 16 threads: 495.606164360 seconds
+EVAL 16 threads: 95.997858735 seconds
+EVAL 16 threads: 678.575804835 seconds
+8 threads 64MB I/O evaluation
+EVAL 8 threads: 243.302813259 seconds
+EVAL 8 threads: 48.050478070 seconds
+EVAL 8 threads: 335.238926143 seconds
+4 threads 64MB I/O evaluation
+EVAL 4 threads: 131.637091579 seconds
+EVAL 4 threads: 24.991346747 seconds
+EVAL 4 threads: 174.975022428 seconds
+2 threads 64MB I/O evaluation
+EVAL 2 threads: 71.669425520 seconds
+EVAL 2 threads: 12.806104856 seconds
+EVAL 2 threads: 105.797752778 seconds
+1 threads 64MB I/O evaluation
+EVAL 1 threads: 46.973223190 seconds
+EVAL 1 threads: 7.448300466 seconds
+EVAL 1 threads: 56.262865821 seconds

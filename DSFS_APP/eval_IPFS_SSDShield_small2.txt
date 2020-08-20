@@ -1,0 +1,21 @@
+Small File I/O Evaluation
+1 threads 4KB I/O evaluation
+1 threads: 0.852241350 seconds
+1 threads: 2.008930970 seconds
+1 threads: 1.288905091 seconds
+2 threads 4KB I/O evaluation
+2 threads: 0.505919716 seconds
+2 threads: 1.196164551 seconds
+2 threads: 0.759424016 seconds
+4 threads 4KB I/O evaluation
+4 threads: 0.279796102 seconds
+4 threads: 0.761474519 seconds
+4 threads: 0.338959674 seconds
+8 threads 4KB I/O evaluation
+8 threads: 0.204347724 seconds
+8 threads: 0.555301833 seconds
+8 threads: 0.175473706 seconds
+16 threads 4KB I/O evaluation
+16 threads: 0.239018084 seconds
+16 threads: 0.576849250 seconds
+16 threads: 0.202274374 seconds

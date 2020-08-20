@@ -1,0 +1,18 @@
+Small File I/O Evaluation
+EVAL 1 threads: 62.423090611 seconds
+16 threads 4KB I/O evaluation
+EVAL 16 threads: 67.270278601 seconds
+EVAL 16 threads: 12.400551058 seconds
+8 threads 4KB I/O evaluation
+EVAL 8 threads: 71.780668195 seconds
+EVAL 8 threads: 12.461169412 seconds
+4 threads 4KB I/O evaluation
+EVAL 4 threads: 66.752107156 seconds
+EVAL 4 threads: 12.734224022 seconds
+2 threads 4KB I/O evaluation
+EVAL 2 threads: 72.113772111 seconds
+EVAL 2 threads: 12.548287130 seconds
+1 threads 4KB I/O evaluation
+EVAL 1 threads: 69.858420083 seconds
+EVAL sr OPEN ERROR!!! 0002.txt
+EVAL 1 threads: 0.013886433 seconds

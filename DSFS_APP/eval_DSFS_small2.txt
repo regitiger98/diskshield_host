@@ -1,0 +1,25 @@
+Small File I/O Evaluation
+EVAL 1 threads: 55.537013746 seconds
+16 threads 4KB I/O evaluation
+EVAL 16 threads: 63.279598051 seconds
+EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL 16 threads: 12.399057047 seconds
+8 threads 4KB I/O evaluation
+EVAL sw OPEN ERROR!!!
+EVAL 8 threads: 65.682980414 seconds
+EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL 8 threads: 12.433906721 seconds
+4 threads 4KB I/O evaluation
+EVAL sw OPEN ERROR!!!
+EVAL 4 threads: 62.966168577 seconds
+EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL 4 threads: 12.594321929 seconds
+2 threads 4KB I/O evaluation
+EVAL sw OPEN ERROR!!!
+EVAL 2 threads: 64.356065931 seconds
+EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL 2 threads: 12.411935737 seconds
+1 threads 4KB I/O evaluation
+EVAL 1 threads: 66.104659621 seconds
+EVAL sr OPEN ERROR!!!
+EVAL 1 threads: 0.013270529 seconds

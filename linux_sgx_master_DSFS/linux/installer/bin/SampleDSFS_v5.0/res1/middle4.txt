@@ -1,0 +1,268 @@
+test_new_systemcall : process 1, file_size 8192, mode 1
+process 1, start_time: 684.050785634 seconds, end_time : 684.051010014 seconds,
+test_new_systemcall : process 1, file_size 8192, mode 0
+process 1, start_time: 699.058744894 seconds, end_time : 699.058814126 seconds,
+test_new_systemcall : process 1, file_size 32768, mode 1
+process 1, start_time: 714.066031585 seconds, end_time : 714.067119066 seconds,
+test_new_systemcall : process 1, file_size 32768, mode 0
+process 1, start_time: 729.079647432 seconds, end_time : 729.079856983 seconds,
+test_new_systemcall : process 1, file_size 131072, mode 1
+process 1, start_time: 744.088367196 seconds, end_time : 744.093100504 seconds,
+test_new_systemcall : process 1, file_size 131072, mode 0
+process 1, start_time: 760.002663223 seconds, end_time : 760.003371633 seconds,
+test_new_systemcall : process 1, file_size 524288, mode 1
+process 1, start_time: 775.015330354 seconds, end_time : 775.031186154 seconds,
+test_new_systemcall : process 1, file_size 524288, mode 0
+process 1, start_time: 790.039558267 seconds, end_time : 790.042403037 seconds,
+test_new_systemcall : process 1, file_size 2097152, mode 1
+process 1, start_time: 805.049546484 seconds, end_time : 806.014065688 seconds,
+test_new_systemcall : process 1, file_size 2097152, mode 0
+process 1, start_time: 821.022522711 seconds, end_time : 821.037726360 seconds,
+test_new_systemcall : process 1, file_size 8388608, mode 1
+process 1, start_time: 836.046610352 seconds, end_time : 838.097770931 seconds,
+test_new_systemcall : process 1, file_size 8388608, mode 0
+process 1, start_time: 854.006268208 seconds, end_time : 854.068195080 seconds,
+test_new_systemcall : process 1, file_size 33554432, mode 1
+process 1, start_time: 869.076688624 seconds, end_time : 879.099919740 seconds,
+test_new_systemcall : process 1, file_size 33554432, mode 0
+process 1, start_time: 895.008262338 seconds, end_time : 897.057548369 seconds,
+test_new_systemcall : process 2, file_size 131072, mode 1
+process 1, start_time: 912.065897258 seconds, end_time : 912.070583269 seconds,
+test_new_systemcall : process 2, file_size 131072, mode 1
+process 2, start_time: 912.068301009 seconds, end_time : 912.073670462 seconds,
+test_new_systemcall : process 2, file_size 131072, mode 0
+process 1, start_time: 927.081832927 seconds, end_time : 927.082368159 seconds,
+test_new_systemcall : process 2, file_size 131072, mode 0
+process 2, start_time: 927.084317216 seconds, end_time : 927.085096782 seconds,
+test_new_systemcall : process 2, file_size 2097152, mode 1
+process 1, start_time: 942.094368007 seconds, end_time : 944.031887794 seconds,
+test_new_systemcall : process 2, file_size 2097152, mode 1
+process 2, start_time: 942.096815787 seconds, end_time : 944.034655743 seconds,
+test_new_systemcall : process 2, file_size 2097152, mode 0
+process 1, start_time: 959.043040716 seconds, end_time : 959.063221502 seconds,
+test_new_systemcall : process 2, file_size 2097152, mode 0
+process 2, start_time: 959.045462369 seconds, end_time : 959.066177132 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 1
+process 2, start_time: 974.080111130 seconds, end_time : 974.085286598 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 1
+process 4, start_time: 974.082511089 seconds, end_time : 974.090592113 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 1
+process 3, start_time: 974.084973876 seconds, end_time : 974.093731146 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 1
+process 1, start_time: 974.086223618 seconds, end_time : 974.094198126 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 0
+process 1, start_time: 990.002212709 seconds, end_time : 990.002831225 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 0
+process 2, start_time: 990.004612171 seconds, end_time : 990.005393050 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 0
+process 4, start_time: 990.007152861 seconds, end_time : 990.007945170 seconds,
+test_new_systemcall : process 4, file_size 131072, mode 0
+process 3, start_time: 990.009599805 seconds, end_time : 990.010530620 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 1
+process 4, start_time: 1005.018828592 seconds, end_time : 1007.092303476 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 1
+process 2, start_time: 1005.021266012 seconds, end_time : 1007.097643683 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 1
+process 3, start_time: 1005.023697752 seconds, end_time : 1007.099590601 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 1
+process 1, start_time: 1005.026135242 seconds, end_time : 1008.000917187 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 0
+process 4, start_time: 1023.010563865 seconds, end_time : 1023.039123129 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 0
+process 2, start_time: 1023.012970542 seconds, end_time : 1023.045233950 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 0
+process 1, start_time: 1023.015391877 seconds, end_time : 1023.047594346 seconds,
+test_new_systemcall : process 4, file_size 2097152, mode 0
+process 3, start_time: 1023.017824112 seconds, end_time : 1023.058432170 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 5, start_time: 1038.067443624 seconds, end_time : 1038.073602502 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 3, start_time: 1038.069857872 seconds, end_time : 1038.077570539 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 1, start_time: 1038.072288458 seconds, end_time : 1038.082553821 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 2, start_time: 1038.074747814 seconds, end_time : 1038.085252652 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 6, start_time: 1038.077367473 seconds, end_time : 1038.090816495 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 4, start_time: 1038.079841008 seconds, end_time : 1038.091688418 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 8, start_time: 1038.082326926 seconds, end_time : 1038.095148494 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 1
+process 7, start_time: 1038.084631353 seconds, end_time : 1038.095737701 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 6, start_time: 1054.004736826 seconds, end_time : 1054.005367709 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 7, start_time: 1054.007257620 seconds, end_time : 1054.007831109 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 8, start_time: 1054.009694195 seconds, end_time : 1054.010281116 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 4, start_time: 1054.012163872 seconds, end_time : 1054.012742563 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 5, start_time: 1054.014611680 seconds, end_time : 1054.015193887 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 3, start_time: 1054.017095155 seconds, end_time : 1054.017674905 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 2, start_time: 1054.019564172 seconds, end_time : 1054.020151605 seconds,
+test_new_systemcall : process 8, file_size 131072, mode 0
+process 1, start_time: 1054.021882555 seconds, end_time : 1054.022723123 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 5, start_time: 1069.037914775 seconds, end_time : 1074.061262647 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 8, start_time: 1069.030632082 seconds, end_time : 1074.061440035 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 1, start_time: 1069.033021038 seconds, end_time : 1074.062362156 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 7, start_time: 1069.040386268 seconds, end_time : 1074.066670816 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 6, start_time: 1069.042858684 seconds, end_time : 1074.067747171 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 2, start_time: 1069.035452836 seconds, end_time : 1074.068287200 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 3, start_time: 1069.047739109 seconds, end_time : 1074.071285338 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 1
+process 4, start_time: 1069.045327326 seconds, end_time : 1074.075006045 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 4, start_time: 1089.088639308 seconds, end_time : 1090.015438366 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 3, start_time: 1090.000997276 seconds, end_time : 1090.048348760 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 7, start_time: 1090.003452884 seconds, end_time : 1090.048382672 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 1, start_time: 1090.005643449 seconds, end_time : 1090.048428152 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 6, start_time: 1089.093455264 seconds, end_time : 1090.058615594 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 8, start_time: 1089.091053395 seconds, end_time : 1090.065227196 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 5, start_time: 1089.095879219 seconds, end_time : 1090.075126154 seconds,
+test_new_systemcall : process 8, file_size 2097152, mode 0
+process 2, start_time: 1089.098433241 seconds, end_time : 1090.075159585 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 10, start_time: 1105.087734379 seconds, end_time : 1105.093876633 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 7, start_time: 1105.090160713 seconds, end_time : 1105.099387814 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 4, start_time: 1105.092577661 seconds, end_time : 1106.001340695 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 9, start_time: 1105.095095734 seconds, end_time : 1106.005565062 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 2, start_time: 1105.097743504 seconds, end_time : 1106.011675493 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 15, start_time: 1106.000225756 seconds, end_time : 1106.015155485 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 8, start_time: 1106.002828004 seconds, end_time : 1106.020697177 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 12, start_time: 1106.005338121 seconds, end_time : 1106.023934834 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 11, start_time: 1106.010368351 seconds, end_time : 1106.027983652 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 5, start_time: 1106.007911549 seconds, end_time : 1106.034167055 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 3, start_time: 1106.012939982 seconds, end_time : 1106.035456376 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 13, start_time: 1106.015591763 seconds, end_time : 1106.036811197 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 16, start_time: 1106.020571453 seconds, end_time : 1106.040889992 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 14, start_time: 1106.018080828 seconds, end_time : 1106.042012730 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 1, start_time: 1106.023056487 seconds, end_time : 1106.042495075 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 1
+process 6, start_time: 1106.025467809 seconds, end_time : 1106.045156833 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 15, start_time: 1121.053719101 seconds, end_time : 1121.054313873 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 7, start_time: 1121.056174953 seconds, end_time : 1121.056752398 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 1, start_time: 1121.058643855 seconds, end_time : 1121.059154605 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 8, start_time: 1121.061132400 seconds, end_time : 1121.061721371 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 14, start_time: 1121.063613728 seconds, end_time : 1121.064189719 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 13, start_time: 1121.066089092 seconds, end_time : 1121.066663001 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 9, start_time: 1121.068553410 seconds, end_time : 1121.069130191 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 4, start_time: 1121.071016359 seconds, end_time : 1121.071608149 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 2, start_time: 1121.073475455 seconds, end_time : 1121.074061687 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 6, start_time: 1121.075963268 seconds, end_time : 1121.076551761 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 11, start_time: 1121.078417996 seconds, end_time : 1121.078993269 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 16, start_time: 1121.080896291 seconds, end_time : 1121.081468516 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 5, start_time: 1121.083349201 seconds, end_time : 1121.083930513 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 3, start_time: 1121.085811195 seconds, end_time : 1121.086388219 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 10, start_time: 1121.088255260 seconds, end_time : 1121.088833347 seconds,
+test_new_systemcall : process 16, file_size 131072, mode 0
+process 12, start_time: 1121.090717001 seconds, end_time : 1121.091385360 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 1, start_time: 1136.099595072 seconds, end_time : 1145.008045003 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 3, start_time: 1137.001990253 seconds, end_time : 1145.046929944 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 5, start_time: 1137.006856119 seconds, end_time : 1145.053266066 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 10, start_time: 1137.004398091 seconds, end_time : 1145.077713004 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 16, start_time: 1137.009328602 seconds, end_time : 1145.086875379 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 12, start_time: 1137.019235589 seconds, end_time : 1145.089112039 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 7, start_time: 1137.021700157 seconds, end_time : 1146.020421212 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 4, start_time: 1137.016746503 seconds, end_time : 1146.021307064 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 15, start_time: 1137.024173137 seconds, end_time : 1146.028848163 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 6, start_time: 1137.031488895 seconds, end_time : 1146.041294295 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 13, start_time: 1137.014287477 seconds, end_time : 1146.046051169 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 11, start_time: 1137.026645625 seconds, end_time : 1146.060340740 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 2, start_time: 1137.011806667 seconds, end_time : 1146.064085306 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 14, start_time: 1137.029121093 seconds, end_time : 1147.091434574 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 9, start_time: 1137.036339789 seconds, end_time : 1147.096284643 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 1
+process 8, start_time: 1137.033877741 seconds, end_time : 1148.005731357 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 1, start_time: 1163.014391754 seconds, end_time : 1163.041430241 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 2, start_time: 1163.036453937 seconds, end_time : 1163.075494620 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 6, start_time: 1163.038923440 seconds, end_time : 1163.075534961 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 16, start_time: 1163.041400001 seconds, end_time : 1163.075561378 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 11, start_time: 1163.033965282 seconds, end_time : 1164.009648515 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 9, start_time: 1163.051557198 seconds, end_time : 1164.009830333 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 14, start_time: 1163.019212326 seconds, end_time : 1164.041333971 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 4, start_time: 1163.026508628 seconds, end_time : 1164.044636003 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 5, start_time: 1163.031468260 seconds, end_time : 1164.046895310 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 12, start_time: 1163.024038513 seconds, end_time : 1164.055695995 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 13, start_time: 1163.021630059 seconds, end_time : 1164.063510307 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 8, start_time: 1163.016800498 seconds, end_time : 1164.070884615 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 7, start_time: 1163.044208093 seconds, end_time : 1164.080796331 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 10, start_time: 1163.028980654 seconds, end_time : 1164.086745629 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 3, start_time: 1163.046668539 seconds, end_time : 1164.092564131 seconds,
+test_new_systemcall : process 16, file_size 2097152, mode 0
+process 15, start_time: 1163.049121607 seconds, end_time : 1164.096455622 seconds,

@@ -1,0 +1,124 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+App_C_Flags	Makefile	/^App_C_Flags := $(SGX_COMMON_CFLAGS) -fPIC -Wno-attributes $(App_Include_Paths)$/;"	m
+App_Cpp_Files	Makefile	/^App_Cpp_Files := $(wildcard DRM_app\/*.cpp) $/;"	m
+App_Cpp_Flags	Makefile	/^App_Cpp_Flags := $(App_C_Flags) -std=c++11$/;"	m
+App_Cpp_Objects	Makefile	/^App_Cpp_Objects := $(App_Cpp_Files:.cpp=.o)$/;"	m
+App_Include_Paths	Makefile	/^App_Include_Paths := -I$(SGX_SDK)\/include$/;"	m
+App_Link_Flags	Makefile	/^App_Link_Flags := $(SGX_COMMON_CFLAGS) -L$(SGX_LIBRARY_PATH) -l$(Urts_Library_Name) -L. -lpthread -Wl,-rpath=$(CURDIR)\/sample_libcrypto -Wl,-rpath=$(CURDIR)$/;"	m
+App_Name	Makefile	/^App_Name := app$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = HW_DEBUG$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = HW_PRERELEASE$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = HW_RELEASE$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = SIM_DEBUG$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = SIM_PRERELEASE$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = SIM_RELEASE$/;"	m
+CC_BELOW_4_9	Makefile	/^CC_BELOW_4_9 := $(shell expr "`$(CC) -dumpversion`" \\< "4.9")$/;"	m
+Crypto_Library_Name	Makefile	/^Crypto_Library_Name := sgx_tcrypto$/;"	m
+ENCLAVE_NAME	DRM_app/ReplayProtectedDRM.cpp	44;"	d	file:
+ENCLAVE_NAME	DRM_app/TimeBasedDRM.cpp	41;"	d	file:
+Enclave_C_Flags	Makefile	/^	Enclave_C_Flags := $(SGX_COMMON_CFLAGS) -nostdinc -fvisibility=hidden -fpie -ffunction-sections -fdata-sections -fstack-protector$/;"	m
+Enclave_C_Flags	Makefile	/^	Enclave_C_Flags := $(SGX_COMMON_CFLAGS) -nostdinc -fvisibility=hidden -fpie -ffunction-sections -fdata-sections -fstack-protector-strong$/;"	m
+Enclave_Config_File	Makefile	/^Enclave_Config_File := DRM_enclave\/DRM_enclave.config.xml$/;"	m
+Enclave_Cpp_Files	Makefile	/^Enclave_Cpp_Files := DRM_enclave\/DRM_enclave.cpp$/;"	m
+Enclave_Cpp_Flags	Makefile	/^Enclave_Cpp_Flags := $(Enclave_C_Flags) -std=c++11 -nostdinc++$/;"	m
+Enclave_Cpp_Objects	Makefile	/^Enclave_Cpp_Objects := $(Enclave_Cpp_Files:.cpp=.o)$/;"	m
+Enclave_Include_Paths	Makefile	/^Enclave_Include_Paths := -I$(SGX_SDK)\/include -I$(SGX_SDK)\/include\/tlibc -I$(SGX_SDK)\/include\/libcxx$/;"	m
+Enclave_Link_Flags	Makefile	/^Enclave_Link_Flags := $(SGX_COMMON_CFLAGS) -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L$(SGX_LIBRARY_PATH) \\$/;"	m
+Enclave_Name	Makefile	/^Enclave_Name := DRM_enclave.so$/;"	m
+LEASE_EXPIRED	include/sealed_data_defines.h	51;"	d
+MAX_RELEASE_REACHED	include/sealed_data_defines.h	43;"	d
+PLATFORM_SERVICE_DOWNGRADED	include/sealed_data_defines.h	40;"	d
+REPLAY_DETECTED	include/sealed_data_defines.h	42;"	d
+REPLAY_PROTECTED_PAY_LOAD_MAX_RELEASE_VERSION	include/sealed_data_defines.h	47;"	d
+REPLAY_PROTECTED_SECRET_SIZE	DRM_enclave/DRM_enclave.cpp	42;"	d	file:
+ReplayProtectedDRM	DRM_app/ReplayProtectedDRM.cpp	/^ReplayProtectedDRM::ReplayProtectedDRM(): enclave_id(0)$/;"	f	class:ReplayProtectedDRM
+ReplayProtectedDRM	DRM_app/ReplayProtectedDRM.h	/^class ReplayProtectedDRM$/;"	c
+SEALED_REPLAY_PROTECTED_PAY_LOAD_SIZE	include/sealed_data_defines.h	46;"	d
+SGX_ARCH	Makefile	/^	SGX_ARCH := x86$/;"	m
+SGX_ARCH	Makefile	/^SGX_ARCH ?= x64$/;"	m
+SGX_COMMON_CFLAGS	Makefile	/^	SGX_COMMON_CFLAGS := -m32$/;"	m
+SGX_COMMON_CFLAGS	Makefile	/^	SGX_COMMON_CFLAGS := -m64$/;"	m
+SGX_DEBUG	Makefile	/^SGX_DEBUG ?= 1$/;"	m
+SGX_EDGER8R	Makefile	/^	SGX_EDGER8R := $(SGX_SDK)\/bin\/x64\/sgx_edger8r$/;"	m
+SGX_EDGER8R	Makefile	/^	SGX_EDGER8R := $(SGX_SDK)\/bin\/x86\/sgx_edger8r$/;"	m
+SGX_ENCLAVE_SIGNER	Makefile	/^	SGX_ENCLAVE_SIGNER := $(SGX_SDK)\/bin\/x64\/sgx_sign$/;"	m
+SGX_ENCLAVE_SIGNER	Makefile	/^	SGX_ENCLAVE_SIGNER := $(SGX_SDK)\/bin\/x86\/sgx_sign$/;"	m
+SGX_LIBRARY_PATH	Makefile	/^	SGX_LIBRARY_PATH := $(SGX_SDK)\/lib$/;"	m
+SGX_LIBRARY_PATH	Makefile	/^	SGX_LIBRARY_PATH := $(SGX_SDK)\/lib64$/;"	m
+SGX_MODE	Makefile	/^SGX_MODE ?= HW$/;"	m
+SGX_SDK	Makefile	/^SGX_SDK ?= \/opt\/intel\/sgxsdk$/;"	m
+Service_Library_Name	Makefile	/^	Service_Library_Name := sgx_tservice$/;"	m
+Service_Library_Name	Makefile	/^	Service_Library_Name := sgx_tservice_sim$/;"	m
+Signed_Enclave_Name	Makefile	/^Signed_Enclave_Name := DRM_enclave.signed.so$/;"	m
+Sleep	DRM_app/DRM_app.cpp	43;"	d	file:
+TIMESOURCE_CHANGED	include/sealed_data_defines.h	49;"	d
+TIMESTAMP_UNEXPECTED	include/sealed_data_defines.h	50;"	d
+TIME_BASED_LEASE_DURATION_SECOND	include/sealed_data_defines.h	55;"	d
+TIME_BASED_PAY_LOAD_SIZE	include/sealed_data_defines.h	54;"	d
+TIME_BASED_SECRET_SIZE	DRM_enclave/DRM_enclave.cpp	410;"	d	file:
+TimeBasedDRM	DRM_app/TimeBasedDRM.cpp	/^TimeBasedDRM::TimeBasedDRM(void): enclave_id(0)$/;"	f	class:TimeBasedDRM
+TimeBasedDRM	DRM_app/TimeBasedDRM.h	/^class TimeBasedDRM$/;"	c
+Trts_Library_Name	Makefile	/^	Trts_Library_Name := sgx_trts$/;"	m
+Trts_Library_Name	Makefile	/^	Trts_Library_Name := sgx_trts_sim$/;"	m
+Urts_Library_Name	Makefile	/^	Urts_Library_Name := sgx_urts$/;"	m
+Urts_Library_Name	Makefile	/^	Urts_Library_Name := sgx_urts_sim$/;"	m
+_SEALED_DATA_DEFINES_H_	include/sealed_data_defines.h	36;"	d
+_T	DRM_app/DRM_app.cpp	286;"	d	file:
+_activity_log	DRM_enclave/DRM_enclave.cpp	/^typedef struct _activity_log$/;"	s	file:
+_replay_protected_pay_load	DRM_enclave/DRM_enclave.cpp	/^typedef struct _replay_protected_pay_load$/;"	s	file:
+_time_based_pay_load	DRM_enclave/DRM_enclave.cpp	/^typedef struct _time_based_pay_load$/;"	s	file:
+activity_log	DRM_enclave/DRM_enclave.cpp	/^}activity_log;$/;"	t	typeref:struct:_activity_log	file:
+create_sealed_policy	DRM_enclave/DRM_enclave.cpp	/^uint32_t create_sealed_policy(uint8_t* sealed_log, uint32_t sealed_log_size )$/;"	f
+create_time_based_policy	DRM_enclave/DRM_enclave.cpp	/^uint32_t create_time_based_policy(uint8_t* sealed_log,$/;"	f
+delete_sealed_policy	DRM_enclave/DRM_enclave.cpp	/^uint32_t delete_sealed_policy(const uint8_t* sealed_log,$/;"	f
+delete_secret	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM:: delete_secret(uint8_t* stored_sealed_activity_log)$/;"	f	class:ReplayProtectedDRM
+delete_secret	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM::delete_secret()$/;"	f	class:ReplayProtectedDRM
+enclave_id	DRM_app/ReplayProtectedDRM.h	/^    sgx_enclave_id_t enclave_id;$/;"	m	class:ReplayProtectedDRM
+enclave_id	DRM_app/TimeBasedDRM.h	/^    sgx_enclave_id_t enclave_id;$/;"	m	class:TimeBasedDRM
+init	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM:: init()$/;"	f	class:ReplayProtectedDRM
+init	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM:: init(uint8_t*  stored_sealed_activity_log)$/;"	f	class:ReplayProtectedDRM
+init	DRM_app/TimeBasedDRM.cpp	/^uint32_t TimeBasedDRM:: init()$/;"	f	class:TimeBasedDRM
+init	DRM_app/TimeBasedDRM.cpp	/^uint32_t TimeBasedDRM:: init(uint8_t*  stored_time_based_policy)$/;"	f	class:TimeBasedDRM
+launch_token	DRM_app/ReplayProtectedDRM.h	/^    sgx_launch_token_t launch_token;$/;"	m	class:ReplayProtectedDRM
+launch_token	DRM_app/TimeBasedDRM.h	/^    sgx_launch_token_t launch_token;$/;"	m	class:TimeBasedDRM
+lease_duration	DRM_enclave/DRM_enclave.cpp	/^    sgx_time_t lease_duration;$/;"	m	struct:_time_based_pay_load	file:
+log	DRM_enclave/DRM_enclave.cpp	/^    activity_log log;$/;"	m	struct:_replay_protected_pay_load	file:
+main	DRM_app/DRM_app.cpp	/^int main(int argc, char* argv[])$/;"	f
+max_release_version	DRM_enclave/DRM_enclave.cpp	/^    uint32_t max_release_version;$/;"	m	struct:_activity_log	file:
+mc	DRM_enclave/DRM_enclave.cpp	/^    sgx_mc_uuid_t mc;$/;"	m	struct:_replay_protected_pay_load	file:
+mc_value	DRM_enclave/DRM_enclave.cpp	/^    uint32_t mc_value;$/;"	m	struct:_replay_protected_pay_load	file:
+memcpy_s	DRM_app/DRM_app.cpp	42;"	d	file:
+nonce	DRM_enclave/DRM_enclave.cpp	/^    sgx_time_source_nonce_t nonce;$/;"	m	struct:_time_based_pay_load	file:
+perform_function	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM:: perform_function($/;"	f	class:ReplayProtectedDRM
+perform_function	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM:: perform_function()$/;"	f	class:ReplayProtectedDRM
+perform_function	DRM_app/TimeBasedDRM.cpp	/^uint32_t TimeBasedDRM::perform_function()$/;"	f	class:TimeBasedDRM
+perform_function	DRM_app/TimeBasedDRM.cpp	/^uint32_t TimeBasedDRM::perform_function(uint8_t* stored_time_based_policy)$/;"	f	class:TimeBasedDRM
+perform_sealed_policy	DRM_enclave/DRM_enclave.cpp	/^uint32_t perform_sealed_policy(const uint8_t* sealed_log,$/;"	f
+perform_time_based_policy	DRM_enclave/DRM_enclave.cpp	/^uint32_t perform_time_based_policy(const uint8_t* sealed_log,$/;"	f
+release_version	DRM_enclave/DRM_enclave.cpp	/^    uint32_t release_version;$/;"	m	struct:_activity_log	file:
+replay_protected_pay_load	DRM_enclave/DRM_enclave.cpp	/^}replay_protected_pay_load;$/;"	t	typeref:struct:_replay_protected_pay_load	file:
+sealed_activity_log	DRM_app/ReplayProtectedDRM.h	/^    uint8_t  sealed_activity_log[sealed_activity_log_length];$/;"	m	class:ReplayProtectedDRM
+sealed_activity_log_length	DRM_app/ReplayProtectedDRM.h	/^    static const uint32_t sealed_activity_log_length = SEALED_REPLAY_PROTECTED_PAY_LOAD_SIZE;$/;"	m	class:ReplayProtectedDRM
+secret	DRM_enclave/DRM_enclave.cpp	/^    uint8_t secret[REPLAY_PROTECTED_SECRET_SIZE];$/;"	m	struct:_replay_protected_pay_load	file:
+secret	DRM_enclave/DRM_enclave.cpp	/^    uint8_t secret[TIME_BASED_SECRET_SIZE];$/;"	m	struct:_time_based_pay_load	file:
+test_replay_protected_drm_operation	DRM_app/DRM_app.cpp	/^uint32_t test_replay_protected_drm_operation()$/;"	f
+test_replay_protected_drm_replay_attack_protection	DRM_app/DRM_app.cpp	/^uint32_t test_replay_protected_drm_replay_attack_protection()$/;"	f
+test_replay_protected_drm_update_limitation	DRM_app/DRM_app.cpp	/^uint32_t test_replay_protected_drm_update_limitation()$/;"	f
+test_time_based_policy_expiration	DRM_app/DRM_app.cpp	/^uint32_t test_time_based_policy_expiration()$/;"	f
+test_time_based_policy_operation	DRM_app/DRM_app.cpp	/^uint32_t test_time_based_policy_operation()$/;"	f
+time_based_pay_load	DRM_enclave/DRM_enclave.cpp	/^}time_based_pay_load;$/;"	t	typeref:struct:_time_based_pay_load	file:
+time_based_policy	DRM_app/TimeBasedDRM.h	/^    uint8_t  time_based_policy[time_based_policy_length];$/;"	m	class:TimeBasedDRM
+time_based_policy_length	DRM_app/TimeBasedDRM.h	/^    static const uint32_t time_based_policy_length = TIME_BASED_PAY_LOAD_SIZE;$/;"	m	class:TimeBasedDRM
+timestamp_base	DRM_enclave/DRM_enclave.cpp	/^    sgx_time_t timestamp_base;$/;"	m	struct:_time_based_pay_load	file:
+update_sealed_policy	DRM_enclave/DRM_enclave.cpp	/^uint32_t update_sealed_policy(uint8_t* sealed_log, uint32_t sealed_log_size)$/;"	f
+update_secret	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM:: update_secret(uint8_t* stored_sealed_activity_log)$/;"	f	class:ReplayProtectedDRM
+update_secret	DRM_app/ReplayProtectedDRM.cpp	/^uint32_t ReplayProtectedDRM::update_secret()$/;"	f	class:ReplayProtectedDRM
+verify_mc	DRM_enclave/DRM_enclave.cpp	/^static uint32_t verify_mc(replay_protected_pay_load* data2verify)$/;"	f	file:
+verify_sealed_data	DRM_enclave/DRM_enclave.cpp	/^static uint32_t verify_sealed_data($/;"	f	file:
+~ReplayProtectedDRM	DRM_app/ReplayProtectedDRM.cpp	/^ReplayProtectedDRM::~ReplayProtectedDRM(void)$/;"	f	class:ReplayProtectedDRM
+~TimeBasedDRM	DRM_app/TimeBasedDRM.cpp	/^TimeBasedDRM::~TimeBasedDRM(void)$/;"	f	class:TimeBasedDRM

@@ -1,0 +1,56 @@
+test_new_systemcall : process 1, file_size 8192, mode 1
+
+mode sequential write, total_size : 0.01 MB, actual_time : 0.000346413s, 22.552560 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 8192, mode 0
+
+mode sequential read, total_size : 0.01 MB, actual_time : 0.000082950s, 94.183243 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 32768, mode 1
+
+mode sequential write, total_size : 0.03 MB, actual_time : 0.001154131s, 27.076649 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 32768, mode 0
+
+mode sequential read, total_size : 0.03 MB, actual_time : 0.000188565s, 165.725347 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 131072, mode 1
+
+mode sequential write, total_size : 0.12 MB, actual_time : 0.004837068s, 25.842101 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 131072, mode 0
+
+mode sequential read, total_size : 0.12 MB, actual_time : 0.000774069s, 161.484312 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 524288, mode 1
+
+mode sequential write, total_size : 0.50 MB, actual_time : 0.919835996s, 0.543575 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 524288, mode 0
+
+mode sequential read, total_size : 0.50 MB, actual_time : 0.003145652s, 158.949560 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 2097152, mode 1
+
+mode sequential write, total_size : 2.00 MB, actual_time : 0.979058498s, 2.042779 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 2097152, mode 0
+
+mode sequential read, total_size : 2.00 MB, actual_time : 0.014311525s, 139.747511 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 8388608, mode 1
+
+mode sequential write, total_size : 8.00 MB, actual_time : 3.019787909s, 2.649193 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 8388608, mode 0
+
+mode sequential read, total_size : 8.00 MB, actual_time : 0.964805805s, 8.291824 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 67108864, mode 1
+
+mode sequential write, total_size : 64.00 MB, actual_time : 25.980214660s, 2.463413 MB/s
+---------------------------------------------------------
+test_new_systemcall : process 1, file_size 67108864, mode 0
+
+mode sequential read, total_size : 64.00 MB, actual_time : 5.022761331s, 12.741995 MB/s
+---------------------------------------------------------

@@ -1,0 +1,70 @@
+Small File I/O Evaluation
+EVAL file_no: 0000session_request_ocall) meesage sends!
+EVAL 1 threads: 63.889980319 seconds
+1 threads 4KB I/O evaluation
+EVAL file_no: 0000EVAL 1 threads: 66.381709614 seconds
+EVAL file_no: 0000EVAL 1 threads: 12.054621507 seconds
+2 threads 4KB I/O evaluation
+EVAL file_no: 2048session_request_ocall) meesage sends!
+EVAL file_no: 0000EVAL 2 threads: 66.363746654 seconds
+EVAL file_no: 2048[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL 2 threads: 12.346948137 seconds
+4 threads 4KB I/O evaluation
+EVAL file_no: 3072[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2048[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1024[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL 4 threads: 62.767110818 seconds
+EVAL file_no: 1024[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3072[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2048[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL 4 threads: 12.592318488 seconds
+8 threads 4KB I/O evaluation
+EVAL file_no: 1536[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0512[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2560[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3584[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1024[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3072[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2048[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL 8 threads: 65.857712608 seconds
+EVAL file_no: 3584[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2560[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3072[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1536[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2048[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0512[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1024[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL 8 threads: 12.628761138 seconds
+16 threads 4KB I/O evaluation
+EVAL file_no: 0768[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2816[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0256[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2560[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3840[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3584[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1792[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1536[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3328[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2304[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3072[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2048[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1280[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1024[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0512[CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL 16 threads: 64.996402011 seconds
+EVAL file_no: 3328EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1280EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0256EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3840EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3584EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2816EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 3072EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2560EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1792EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1536EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2304EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 1024EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 2048EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0768EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0512EVAL sr OPEN ERROR!!![CEnclavePool /home/jinu/Desktop/SGX/ASIACCS/linux_sgx_master_DSFS/psw/urts/enclave.cpp:475] enter CEnclavePool constructor
+EVAL file_no: 0000EVAL sr OPEN ERROR!!!EVAL 16 threads: 0.639373413 seconds

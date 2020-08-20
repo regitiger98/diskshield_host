@@ -1,0 +1,1 @@
+cmd_/home/jinu/Desktop/SGX/linux-sgx-driver-master/isgx.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/jinu/Desktop/SGX/linux-sgx-driver-master/isgx.ko /home/jinu/Desktop/SGX/linux-sgx-driver-master/isgx.o /home/jinu/Desktop/SGX/linux-sgx-driver-master/isgx.mod.o ;  true

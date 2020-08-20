@@ -1,0 +1,14 @@
+sequential write, 0.01, 0.000218869, 35.694868
+sequential read, 0.01, 0.000042747, 182.761364
+sequential write, 0.03, 0.001266153, 24.681061
+sequential read, 0.03, 0.000141950, 220.147940
+sequential write, 0.12, 0.905239700, 0.138085
+sequential read, 0.12, 0.000588519, 212.397561
+sequential write, 0.50, 0.019747563, 25.319580
+sequential read, 0.50, 0.003455790, 144.684718
+sequential write, 2.00, 0.979724619, 2.041390
+sequential read, 2.00, 0.013655447, 146.461701
+sequential write, 8.00, 3.921057541, 2.040266
+sequential read, 8.00, 0.065197797, 122.703532
+sequential write, 64.00, 25.963424424, 2.465006
+sequential read, 64.00, 5.943392922, 10.768260

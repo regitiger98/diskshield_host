@@ -1,0 +1,9 @@
+19.11.14
+DISKSHIELD코드 돌려봄.
+SSD에 maccopyfailed2, MAC Authentication Fails가 떴는데 확인 필요함
+
+Illegal instruction (core dumped)
+에러 발생함.
+
+해결: /opt/intel/sgxpsw의 sh uninstall.sh 실행하여 지우고, 다시 install하기
+안되면 아예 rm -r /opt/intel/sgxpsw 하고 다시 install하기

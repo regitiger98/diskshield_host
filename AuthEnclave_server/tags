@@ -1,0 +1,1099 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACTIVE	LocalAttestationCode/datatypes.h	57;"	d
+AEK	Include/dh_session_protocol.h	/^            sgx_key_128bit_t AEK; \/\/Session Key$/;"	m	struct:_la_dh_session_t::__anon16::__anon18
+ATTESTATION_ERROR	LocalAttestationCode/error_codes.h	41;"	d
+ATTESTATION_SE_ERROR	LocalAttestationCode/error_codes.h	42;"	d
+ATTESTATION_STATUS	LocalAttestationCode/error_codes.h	/^typedef uint32_t ATTESTATION_STATUS;$/;"	t
+App_Compile_Flags	Makefile	/^App_Compile_Flags := $(SGX_COMMON_CFLAGS) -fPIC -Wno-attributes $(App_Include_Paths)$/;"	m
+App_Cpp_Files	Makefile	/^App_Cpp_Files := $(wildcard App\/*.cpp)$/;"	m
+App_Cpp_Objects	Makefile	/^App_Cpp_Objects := $(App_Cpp_Files:.cpp=.o)$/;"	m
+App_Include_Paths	Makefile	/^App_Include_Paths := -I$(SGX_SDK)\/include -I$(SGX_SDK)\/include\/ippcp -I.\/Include -I.\/LocalAttestationCode$/;"	m
+App_Link_Flags	Makefile	/^App_Link_Flags := $(SGX_COMMON_CFLAGS) -L$(SGX_LIBRARY_PATH) -l$(Urts_Library_Name) -L. -lpthread -lLocalAttestation_unTrusted $/;"	m
+App_Name	Makefile	/^App_Name := app$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = HW_DEBUG$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = HW_PRERELEASE$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = HW_RELEASE$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = SIM_DEBUG$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = SIM_PRERELEASE$/;"	m
+Build_Mode	Makefile	/^	Build_Mode = SIM_RELEASE$/;"	m
+CC_BELOW_4_9	Makefile	/^CC_BELOW_4_9 := $(shell expr "`$(CC) -dumpversion`" \\< "4.9")$/;"	m
+CHECK_REF_POINTER	Enclave1/Enclave1_t.c	10;"	d	file:
+CHECK_REF_POINTER	Enclave2/Enclave2_t.c	10;"	d	file:
+CHECK_REF_POINTER	Enclave3/Enclave3_t.c	10;"	d	file:
+CHECK_REF_POINTER	LocalAttestationCode/LocalAttestationCode_t.c	10;"	d	file:
+CHECK_UNIQUE_POINTER	Enclave1/Enclave1_t.c	15;"	d	file:
+CHECK_UNIQUE_POINTER	Enclave2/Enclave2_t.c	15;"	d	file:
+CHECK_UNIQUE_POINTER	Enclave3/Enclave3_t.c	15;"	d	file:
+CHECK_UNIQUE_POINTER	LocalAttestationCode/LocalAttestationCode_t.c	15;"	d	file:
+CLOSED	LocalAttestationCode/datatypes.h	55;"	d
+Common_Enclave_Link_Flags	Makefile	/^Common_Enclave_Link_Flags := $(SGX_COMMON_CFLAGS) -Wl,--no-undefined -nostdlib -nodefaultlibs -nostartfiles -L$(SGX_LIBRARY_PATH) \\$/;"	m
+Crypto_Library_Name	Makefile	/^Crypto_Library_Name := sgx_tcrypto$/;"	m
+DATATYPES_H_	LocalAttestationCode/datatypes.h	39;"	d
+DERIVE_MAC_KEY	LocalAttestationCode/datatypes.h	50;"	d
+DERIVE_SESSION_KEY	LocalAttestationCode/datatypes.h	51;"	d
+DERIVE_VK1_KEY	LocalAttestationCode/datatypes.h	52;"	d
+DERIVE_VK2_KEY	LocalAttestationCode/datatypes.h	53;"	d
+DH_KEY_SIZE	LocalAttestationCode/datatypes.h	41;"	d
+DUPLICATE_SESSION	LocalAttestationCode/error_codes.h	52;"	d
+ENCLAVE1_PATH	App/App.cpp	59;"	d	file:
+ENCLAVE1_T_H__	Enclave1/Enclave1_t.h	2;"	d
+ENCLAVE1_U_H__	Enclave1/Enclave1_u.h	2;"	d
+ENCLAVE2_PATH	App/App.cpp	60;"	d	file:
+ENCLAVE2_T_H__	Enclave2/Enclave2_t.h	2;"	d
+ENCLAVE2_U_H__	Enclave2/Enclave2_u.h	2;"	d
+ENCLAVE3_PATH	App/App.cpp	61;"	d	file:
+ENCLAVE3_T_H__	Enclave3/Enclave3_t.h	2;"	d
+ENCLAVE3_U_H__	Enclave3/Enclave3_u.h	2;"	d
+ENCLAVE_TO_ENCLAVE_CALL	LocalAttestationCode/datatypes.h	60;"	d
+ENCLAVE_TRUST_ERROR	LocalAttestationCode/error_codes.h	50;"	d
+ENCRYPT_DECRYPT_ERROR	LocalAttestationCode/error_codes.h	51;"	d
+ERROR_CODES_H_	LocalAttestationCode/error_codes.h	33;"	d
+ERROR_TAG_MISMATCH	LocalAttestationCode/error_codes.h	46;"	d
+Enclave1_Link_Flags	Makefile	/^Enclave1_Link_Flags := $(Common_Enclave_Link_Flags) -Wl,--version-script=$(Enclave1_Version_Script)$/;"	m
+Enclave1_Version_Script	Makefile	/^Enclave1_Version_Script := Enclave1\/Enclave1.lds$/;"	m
+Enclave1_end_session	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_end_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id)$/;"	f
+Enclave1_end_session_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_end_session_ocall(void* pms)$/;"	f	file:
+Enclave1_exchange_report	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_exchange_report(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+Enclave1_exchange_report_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_exchange_report_ocall(void* pms)$/;"	f	file:
+Enclave1_generate_response	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_generate_response(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+Enclave1_send_request_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_send_request_ocall(void* pms)$/;"	f	file:
+Enclave1_session_request	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_session_request(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+Enclave1_session_request_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_session_request_ocall(void* pms)$/;"	f	file:
+Enclave1_sgx_oc_cpuidex	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_sgx_oc_cpuidex(void* pms)$/;"	f	file:
+Enclave1_sgx_thread_set_multiple_untrusted_events_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_sgx_thread_set_multiple_untrusted_events_ocall(void* pms)$/;"	f	file:
+Enclave1_sgx_thread_set_untrusted_event_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_sgx_thread_set_untrusted_event_ocall(void* pms)$/;"	f	file:
+Enclave1_sgx_thread_setwait_untrusted_events_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_sgx_thread_setwait_untrusted_events_ocall(void* pms)$/;"	f	file:
+Enclave1_sgx_thread_wait_untrusted_event_ocall	Enclave1/Enclave1_u.c	/^static sgx_status_t SGX_CDECL Enclave1_sgx_thread_wait_untrusted_event_ocall(void* pms)$/;"	f	file:
+Enclave1_test_close_session	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_test_close_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave1_test_create_session	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_test_create_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave1_test_enclave_to_enclave_call	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_test_enclave_to_enclave_call(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave1_test_message_exchange	Enclave1/Enclave1_u.c	/^sgx_status_t Enclave1_test_message_exchange(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave2_Link_Flags	Makefile	/^Enclave2_Link_Flags := $(Common_Enclave_Link_Flags) -Wl,--version-script=$(Enclave2_Version_Script)$/;"	m
+Enclave2_Version_Script	Makefile	/^Enclave2_Version_Script := Enclave2\/Enclave2.lds$/;"	m
+Enclave2_end_session	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_end_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id)$/;"	f
+Enclave2_end_session_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_end_session_ocall(void* pms)$/;"	f	file:
+Enclave2_exchange_report	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_exchange_report(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+Enclave2_exchange_report_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_exchange_report_ocall(void* pms)$/;"	f	file:
+Enclave2_generate_response	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_generate_response(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+Enclave2_send_request_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_send_request_ocall(void* pms)$/;"	f	file:
+Enclave2_session_request	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_session_request(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+Enclave2_session_request_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_session_request_ocall(void* pms)$/;"	f	file:
+Enclave2_sgx_oc_cpuidex	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_sgx_oc_cpuidex(void* pms)$/;"	f	file:
+Enclave2_sgx_thread_set_multiple_untrusted_events_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_sgx_thread_set_multiple_untrusted_events_ocall(void* pms)$/;"	f	file:
+Enclave2_sgx_thread_set_untrusted_event_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_sgx_thread_set_untrusted_event_ocall(void* pms)$/;"	f	file:
+Enclave2_sgx_thread_setwait_untrusted_events_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_sgx_thread_setwait_untrusted_events_ocall(void* pms)$/;"	f	file:
+Enclave2_sgx_thread_wait_untrusted_event_ocall	Enclave2/Enclave2_u.c	/^static sgx_status_t SGX_CDECL Enclave2_sgx_thread_wait_untrusted_event_ocall(void* pms)$/;"	f	file:
+Enclave2_test_close_session	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_test_close_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave2_test_create_session	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_test_create_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave2_test_enclave_to_enclave_call	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_test_enclave_to_enclave_call(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave2_test_message_exchange	Enclave2/Enclave2_u.c	/^sgx_status_t Enclave2_test_message_exchange(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave3_Link_Flags	Makefile	/^Enclave3_Link_Flags := $(Common_Enclave_Link_Flags) -Wl,--version-script=$(Enclave3_Version_Script)$/;"	m
+Enclave3_Version_Script	Makefile	/^Enclave3_Version_Script := Enclave3\/Enclave3.lds$/;"	m
+Enclave3_end_session	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_end_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id)$/;"	f
+Enclave3_end_session_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_end_session_ocall(void* pms)$/;"	f	file:
+Enclave3_exchange_report	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_exchange_report(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+Enclave3_exchange_report_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_exchange_report_ocall(void* pms)$/;"	f	file:
+Enclave3_generate_response	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_generate_response(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+Enclave3_send_request_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_send_request_ocall(void* pms)$/;"	f	file:
+Enclave3_session_request	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_session_request(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+Enclave3_session_request_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_session_request_ocall(void* pms)$/;"	f	file:
+Enclave3_sgx_oc_cpuidex	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_sgx_oc_cpuidex(void* pms)$/;"	f	file:
+Enclave3_sgx_thread_set_multiple_untrusted_events_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_sgx_thread_set_multiple_untrusted_events_ocall(void* pms)$/;"	f	file:
+Enclave3_sgx_thread_set_untrusted_event_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_sgx_thread_set_untrusted_event_ocall(void* pms)$/;"	f	file:
+Enclave3_sgx_thread_setwait_untrusted_events_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_sgx_thread_setwait_untrusted_events_ocall(void* pms)$/;"	f	file:
+Enclave3_sgx_thread_wait_untrusted_event_ocall	Enclave3/Enclave3_u.c	/^static sgx_status_t SGX_CDECL Enclave3_sgx_thread_wait_untrusted_event_ocall(void* pms)$/;"	f	file:
+Enclave3_test_close_session	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_test_close_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave3_test_create_session	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_test_create_session(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave3_test_enclave_to_enclave_call	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_test_enclave_to_enclave_call(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave3_test_message_exchange	Enclave3/Enclave3_u.c	/^sgx_status_t Enclave3_test_message_exchange(sgx_enclave_id_t eid, uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+Enclave_Compile_Flags	Makefile	/^	Enclave_Compile_Flags := $(SGX_COMMON_CFLAGS) -nostdinc -fvisibility=hidden -fpie -ffunction-sections -fdata-sections -fstack-protector$/;"	m
+Enclave_Compile_Flags	Makefile	/^	Enclave_Compile_Flags := $(SGX_COMMON_CFLAGS) -nostdinc -fvisibility=hidden -fpie -ffunction-sections -fdata-sections -fstack-protector-strong$/;"	m
+Enclave_Cpp_Files_1	Makefile	/^Enclave_Cpp_Files_1 := $(wildcard Enclave1\/*.cpp)$/;"	m
+Enclave_Cpp_Files_2	Makefile	/^Enclave_Cpp_Files_2 := $(wildcard Enclave2\/*.cpp)$/;"	m
+Enclave_Cpp_Files_3	Makefile	/^Enclave_Cpp_Files_3 := $(wildcard Enclave3\/*.cpp)$/;"	m
+Enclave_Cpp_Objects_1	Makefile	/^Enclave_Cpp_Objects_1 := $(Enclave_Cpp_Files_1:.cpp=.o)$/;"	m
+Enclave_Cpp_Objects_2	Makefile	/^Enclave_Cpp_Objects_2 := $(Enclave_Cpp_Files_2:.cpp=.o)$/;"	m
+Enclave_Cpp_Objects_3	Makefile	/^Enclave_Cpp_Objects_3 := $(Enclave_Cpp_Files_3:.cpp=.o)$/;"	m
+Enclave_Include_Paths	Makefile	/^Enclave_Include_Paths := -I$(SGX_SDK)\/include -I$(SGX_SDK)\/include\/tlibc -I$(SGX_SDK)\/include\/libcxx -I.\/LocalAttestationCode -I.\/Include$/;"	m
+Enclave_Name_1	Makefile	/^Enclave_Name_1 := libenclave1.so$/;"	m
+Enclave_Name_2	Makefile	/^Enclave_Name_2 := libenclave2.so$/;"	m
+Enclave_Name_3	Makefile	/^Enclave_Name_3 := libenclave3.so$/;"	m
+FILE_NOT_FOUND	LocalAttestationCode/datatypes.h	64;"	d
+INVALID_ARGUMENT	LocalAttestationCode/datatypes.h	62;"	d
+INVALID_PARAMETER	LocalAttestationCode/error_codes.h	38;"	d
+INVALID_PARAMETER_ERROR	LocalAttestationCode/error_codes.h	49;"	d
+INVALID_REQUEST_TYPE_ERROR	LocalAttestationCode/error_codes.h	48;"	d
+INVALID_SESSION	LocalAttestationCode/error_codes.h	40;"	d
+IN_PROGRESS	LocalAttestationCode/datatypes.h	56;"	d
+IPP_ERROR	LocalAttestationCode/error_codes.h	43;"	d
+IV_SIZE	LocalAttestationCode/datatypes.h	48;"	d
+LOCALATTESTATIONCODE_T_H__	LocalAttestationCode/LocalAttestationCode_t.h	2;"	d
+LOCALATTESTATION_H_	LocalAttestationCode/EnclaveMessageExchange.h	40;"	d
+LOGIC_ERROR	LocalAttestationCode/datatypes.h	63;"	d
+MAC_KEY_SIZE	LocalAttestationCode/datatypes.h	44;"	d
+MAC_SIZE	Include/dh_session_protocol.h	41;"	d
+MAC_SIZE	LocalAttestationCode/datatypes.h	43;"	d
+MALLOC_ERROR	LocalAttestationCode/error_codes.h	45;"	d
+MAX_SESSION_COUNT	LocalAttestationCode/EnclaveMessageExchange.cpp	58;"	d	file:
+MESSAGE_EXCHANGE	LocalAttestationCode/datatypes.h	59;"	d
+MSG_BUF_LEN	Include/dh_session_protocol.h	43;"	d
+MSG_HASH_SZ	Include/dh_session_protocol.h	44;"	d
+NONCE_SIZE	Include/dh_session_protocol.h	40;"	d
+NONCE_SIZE	LocalAttestationCode/datatypes.h	42;"	d
+NO_AVAILABLE_SESSION_ERROR	LocalAttestationCode/error_codes.h	44;"	d
+OUT_BUFFER_LENGTH_ERROR	LocalAttestationCode/error_codes.h	47;"	d
+PADDING_SIZE	LocalAttestationCode/datatypes.h	45;"	d
+SAFE_FREE	LocalAttestationCode/datatypes.h	66;"	d
+SGX_ARCH	Makefile	/^	SGX_ARCH := x86$/;"	m
+SGX_ARCH	Makefile	/^SGX_ARCH ?= x64$/;"	m
+SGX_CAST	Enclave1/Enclave1_t.h	16;"	d
+SGX_CAST	Enclave1/Enclave1_u.h	17;"	d
+SGX_CAST	Enclave2/Enclave2_t.h	16;"	d
+SGX_CAST	Enclave2/Enclave2_u.h	17;"	d
+SGX_CAST	Enclave3/Enclave3_t.h	16;"	d
+SGX_CAST	Enclave3/Enclave3_u.h	17;"	d
+SGX_CAST	LocalAttestationCode/LocalAttestationCode_t.h	15;"	d
+SGX_COMMON_CFLAGS	Makefile	/^	SGX_COMMON_CFLAGS := -m32$/;"	m
+SGX_COMMON_CFLAGS	Makefile	/^	SGX_COMMON_CFLAGS := -m64$/;"	m
+SGX_DEBUG	Makefile	/^SGX_DEBUG ?= 1$/;"	m
+SGX_EDGER8R	Makefile	/^	SGX_EDGER8R := $(SGX_SDK)\/bin\/x64\/sgx_edger8r$/;"	m
+SGX_EDGER8R	Makefile	/^	SGX_EDGER8R := $(SGX_SDK)\/bin\/x86\/sgx_edger8r$/;"	m
+SGX_ENCLAVE_SIGNER	Makefile	/^	SGX_ENCLAVE_SIGNER := $(SGX_SDK)\/bin\/x64\/sgx_sign$/;"	m
+SGX_ENCLAVE_SIGNER	Makefile	/^	SGX_ENCLAVE_SIGNER := $(SGX_SDK)\/bin\/x86\/sgx_sign$/;"	m
+SGX_LIBRARY_PATH	Makefile	/^	SGX_LIBRARY_PATH := $(SGX_SDK)\/lib$/;"	m
+SGX_LIBRARY_PATH	Makefile	/^	SGX_LIBRARY_PATH := $(SGX_SDK)\/lib64$/;"	m
+SGX_MODE	Makefile	/^SGX_MODE ?= HW$/;"	m
+SGX_SDK	Makefile	/^SGX_SDK ?= \/home\/jinu\/Desktop\/SGX\/HotStorage\/linux-sgx-master\/linux\/installer\/bin\/sgxsdk$/;"	m
+SUCCESS	LocalAttestationCode/error_codes.h	37;"	d
+Service_Library_Name	Makefile	/^	Service_Library_Name := sgx_tservice$/;"	m
+Service_Library_Name	Makefile	/^	Service_Library_Name := sgx_tservice_sim$/;"	m
+TAG_SIZE	LocalAttestationCode/datatypes.h	47;"	d
+TCHAR	App/App.cpp	46;"	d	file:
+Trts_Library_Name	Makefile	/^	Trts_Library_Name := sgx_trts$/;"	m
+Trts_Library_Name	Makefile	/^	Trts_Library_Name := sgx_trts_sim$/;"	m
+TrustLib_Compile_Cxx_Flags	Makefile	/^TrustLib_Compile_Cxx_Flags :=  -std=c++11 -nostdinc++$/;"	m
+TrustLib_Compile_Flags	Makefile	/^TrustLib_Compile_Flags := $(SGX_COMMON_CFLAGS) -nostdinc -fvisibility=hidden -fpie -fstack-protector  $(TrustLib_Include_Paths)$/;"	m
+TrustLib_Cpp_Files	Makefile	/^TrustLib_Cpp_Files := $(wildcard LocalAttestationCode\/*.cpp)$/;"	m
+TrustLib_Cpp_Objects	Makefile	/^TrustLib_Cpp_Objects := $(TrustLib_Cpp_Files:.cpp=.o)$/;"	m
+TrustLib_Include_Paths	Makefile	/^TrustLib_Include_Paths := -I$(SGX_SDK)\/include -I$(SGX_SDK)\/include\/tlibc -I$(SGX_SDK)\/include\/libcxx -I$(SGX_SDK)\/include\/epid -I.\/Include$/;"	m
+Trust_Lib_Name	Makefile	/^Trust_Lib_Name := libLocalAttestation_Trusted.a$/;"	m
+ULOCALATTESTATION_H_	Untrusted_LocalAttestation/UntrustedEnclaveMessageExchange.h	43;"	d
+UNUSED	App/App.cpp	45;"	d	file:
+UNUSED	Enclave1/Enclave1.cpp	43;"	d	file:
+UNUSED	Enclave2/Enclave2.cpp	43;"	d	file:
+UNUSED	Enclave3/Enclave3.cpp	43;"	d	file:
+UTILITY_E1_H__	Enclave1/Utility_E1.h	33;"	d
+UTILITY_E2_H__	Enclave2/Utility_E2.h	33;"	d
+UTILITY_E3_H__	Enclave3/Utility_E3.h	33;"	d
+UnTrustLib_Compile_Flags	Makefile	/^UnTrustLib_Compile_Flags := $(SGX_COMMON_CFLAGS) -fPIC -Wno-attributes -std=c++11 $(UnTrustLib_Include_Paths)$/;"	m
+UnTrustLib_Cpp_Files	Makefile	/^UnTrustLib_Cpp_Files := $(wildcard Untrusted_LocalAttestation\/*.cpp)$/;"	m
+UnTrustLib_Cpp_Objects	Makefile	/^UnTrustLib_Cpp_Objects := $(UnTrustLib_Cpp_Files:.cpp=.o)$/;"	m
+UnTrustLib_Include_Paths	Makefile	/^UnTrustLib_Include_Paths := -I$(SGX_SDK)\/include -I$(SGX_SDK)\/include\/ippcp -I.\/Include -I.\/LocalAttestationCode$/;"	m
+UnTrustLib_Name	Makefile	/^UnTrustLib_Name := libLocalAttestation_unTrusted.a$/;"	m
+Urts_Library_Name	Makefile	/^	Urts_Library_Name := sgx_urts$/;"	m
+Urts_Library_Name	Makefile	/^	Urts_Library_Name := sgx_urts_sim$/;"	m
+VALID_SESSION	LocalAttestationCode/error_codes.h	39;"	d
+VMC_ATTRIBUTE_MASK	LocalAttestationCode/datatypes.h	68;"	d
+_DH_SESSION_PROROCOL_H	Include/dh_session_protocol.h	33;"	d
+_T	App/App.cpp	48;"	d	file:
+_TCHAR	App/App.cpp	47;"	d	file:
+__STDC_FORMAT_MACROS	App/App.cpp	41;"	d	file:
+_external_param_struct_t	Enclave1/Utility_E1.h	/^typedef struct _external_param_struct_t$/;"	s
+_external_param_struct_t	Enclave3/Utility_E3.h	/^typedef struct _external_param_struct_t$/;"	s
+_internal_param_struct_t	Enclave1/Utility_E1.h	/^typedef struct _internal_param_struct_t$/;"	s
+_internal_param_struct_t	Enclave3/Utility_E3.h	/^typedef struct _internal_param_struct_t$/;"	s
+_la_dh_session_t	Include/dh_session_protocol.h	/^typedef struct _la_dh_session_t$/;"	s
+_ms_in_msg_exchange_t	LocalAttestationCode/datatypes.h	/^typedef struct _ms_in_msg_exchange_t {$/;"	s
+_ms_out_msg_exchange_t	LocalAttestationCode/datatypes.h	/^typedef struct _ms_out_msg_exchange_t {$/;"	s
+_param_struct_t	Enclave2/Utility_E2.h	/^typedef struct _param_struct_t$/;"	s
+_param_struct_t	Enclave3/Utility_E3.h	/^typedef struct _param_struct_t$/;"	s
+_secure_message_t	LocalAttestationCode/datatypes.h	/^typedef struct _secure_message_t$/;"	s
+_session_id_tracker_t	LocalAttestationCode/datatypes.h	/^typedef struct _session_id_tracker_t$/;"	s
+_tmain	App/App.cpp	/^int _tmain(int argc, _TCHAR* argv[])$/;"	f
+_tmain	App/App.cpp	50;"	d	file:
+active	Include/dh_session_protocol.h	/^        }active;$/;"	m	union:_la_dh_session_t::__anon16	typeref:struct:_la_dh_session_t::__anon16::__anon18
+close_session	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS close_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+cmac_128	LocalAttestationCode/datatypes.h	/^typedef uint8_t cmac_128[MAC_SIZE];$/;"	t
+counter	Include/dh_session_protocol.h	/^            uint32_t counter; \/\/Used to store Message Sequence Number$/;"	m	struct:_la_dh_session_t::__anon16::__anon18
+create_session	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS create_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+dh_nonce	LocalAttestationCode/datatypes.h	/^typedef uint8_t dh_nonce[NONCE_SIZE];$/;"	t
+dh_session	Include/dh_session_protocol.h	/^			sgx_dh_session_t dh_session;$/;"	m	struct:_la_dh_session_t::__anon16::__anon17
+dh_session_t	Include/dh_session_protocol.h	/^} dh_session_t;$/;"	t	typeref:struct:_la_dh_session_t
+e1_enclave_id	App/App.cpp	/^sgx_enclave_id_t e1_enclave_id = 0;$/;"	v
+e1_foo1	Enclave1/Enclave1.cpp	/^static uint32_t e1_foo1(external_param_struct_t *p_struct_var)$/;"	f	file:
+e1_foo1_wrapper	Enclave1/Enclave1.cpp	/^static uint32_t e1_foo1_wrapper(ms_in_msg_exchange_t *ms,$/;"	f	file:
+e2_enclave_id	App/App.cpp	/^sgx_enclave_id_t e2_enclave_id = 0;$/;"	v
+e2_foo1	Enclave2/Enclave2.cpp	/^static uint32_t e2_foo1(uint32_t var1, uint32_t var2)$/;"	f	file:
+e2_foo1_wrapper	Enclave2/Enclave2.cpp	/^static uint32_t e2_foo1_wrapper(ms_in_msg_exchange_t *ms,$/;"	f	file:
+e3_enclave_id	App/App.cpp	/^sgx_enclave_id_t e3_enclave_id = 0;$/;"	v
+e3_foo1	Enclave3/Enclave3.cpp	/^static uint32_t e3_foo1(param_struct_t *p_struct_var)$/;"	f	file:
+e3_foo1_wrapper	Enclave3/Enclave3.cpp	/^static uint32_t e3_foo1_wrapper(ms_in_msg_exchange_t *ms,$/;"	f	file:
+ecall_addr	Enclave1/Enclave1_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon2::__anon3	file:
+ecall_addr	Enclave2/Enclave2_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon7::__anon8	file:
+ecall_addr	Enclave3/Enclave3_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon13::__anon14	file:
+ecall_addr	LocalAttestationCode/LocalAttestationCode_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[4];$/;"	m	struct:__anon19::__anon20	file:
+ecall_table	Enclave1/Enclave1_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon2	typeref:struct:__anon2::__anon3	file:
+ecall_table	Enclave2/Enclave2_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon7	typeref:struct:__anon7::__anon8	file:
+ecall_table	Enclave3/Enclave3_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	file:
+ecall_table	LocalAttestationCode/LocalAttestationCode_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[4];$/;"	m	struct:__anon19	typeref:struct:__anon19::__anon20	file:
+enclave_to_enclave_call_dispatcher	Enclave1/Enclave1.cpp	/^extern "C" uint32_t enclave_to_enclave_call_dispatcher(char* decrypted_data,$/;"	f
+enclave_to_enclave_call_dispatcher	Enclave2/Enclave2.cpp	/^extern "C" uint32_t enclave_to_enclave_call_dispatcher(char* decrypted_data,$/;"	f
+enclave_to_enclave_call_dispatcher	Enclave3/Enclave3.cpp	/^extern "C" uint32_t enclave_to_enclave_call_dispatcher(char* decrypted_data,$/;"	f
+end_session	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS end_session(sgx_enclave_id_t src_enclave_id)$/;"	f
+end_session_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL end_session_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+end_session_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL end_session_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+end_session_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL end_session_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+end_session_ocall	LocalAttestationCode/LocalAttestationCode_t.c	/^sgx_status_t SGX_CDECL end_session_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+end_session_ocall	Untrusted_LocalAttestation/UntrustedEnclaveMessageExchange.cpp	/^ATTESTATION_STATUS end_session_ocall(sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id)$/;"	f
+entry_table	Enclave1/Enclave1_t.c	/^	uint8_t entry_table[9][8];$/;"	m	struct:__anon4	file:
+entry_table	Enclave2/Enclave2_t.c	/^	uint8_t entry_table[9][8];$/;"	m	struct:__anon9	file:
+entry_table	Enclave3/Enclave3_t.c	/^	uint8_t entry_table[9][8];$/;"	m	struct:__anon15	file:
+entry_table	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint8_t entry_table[4][4];$/;"	m	struct:__anon21	file:
+exchange_report	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS exchange_report(sgx_enclave_id_t src_enclave_id,$/;"	f
+exchange_report_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL exchange_report_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+exchange_report_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL exchange_report_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+exchange_report_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL exchange_report_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+exchange_report_ocall	LocalAttestationCode/LocalAttestationCode_t.c	/^sgx_status_t SGX_CDECL exchange_report_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg2_t* dh_msg2, sgx_dh_msg3_t* dh_msg3, uint32_t session_id)$/;"	f
+exchange_report_ocall	Untrusted_LocalAttestation/UntrustedEnclaveMessageExchange.cpp	/^ATTESTATION_STATUS exchange_report_ocall(sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg2_t *dh_msg2, sgx_dh_msg3_t *dh_msg3, uint32_t session_id)$/;"	f
+external_param_struct_t	Enclave1/Utility_E1.h	/^}external_param_struct_t;$/;"	t	typeref:struct:_external_param_struct_t
+external_param_struct_t	Enclave3/Utility_E3.h	/^}external_param_struct_t;$/;"	t	typeref:struct:_external_param_struct_t
+func_table	Enclave1/Enclave1.cpp	/^} func_table = {$/;"	v	typeref:struct:__anon1
+func_table	Enclave2/Enclave2.cpp	/^} func_table = {$/;"	v	typeref:struct:__anon6
+func_table	Enclave3/Enclave3.cpp	/^} func_table = {$/;"	v	typeref:struct:__anon11
+g_dest_session_info_map	LocalAttestationCode/EnclaveMessageExchange.cpp	/^std::map<sgx_enclave_id_t, dh_session_t>g_dest_session_info_map;$/;"	v
+g_dyn_entry_table	Enclave1/Enclave1_t.c	/^} g_dyn_entry_table = {$/;"	v	typeref:struct:__anon4
+g_dyn_entry_table	Enclave2/Enclave2_t.c	/^} g_dyn_entry_table = {$/;"	v	typeref:struct:__anon9
+g_dyn_entry_table	Enclave3/Enclave3_t.c	/^} g_dyn_entry_table = {$/;"	v	typeref:struct:__anon15
+g_dyn_entry_table	LocalAttestationCode/LocalAttestationCode_t.c	/^} g_dyn_entry_table = {$/;"	v	typeref:struct:__anon21
+g_ecall_table	Enclave1/Enclave1_t.c	/^} g_ecall_table = {$/;"	v	typeref:struct:__anon2
+g_ecall_table	Enclave2/Enclave2_t.c	/^} g_ecall_table = {$/;"	v	typeref:struct:__anon7
+g_ecall_table	Enclave3/Enclave3_t.c	/^} g_ecall_table = {$/;"	v	typeref:struct:__anon13
+g_ecall_table	LocalAttestationCode/LocalAttestationCode_t.c	/^} g_ecall_table = {$/;"	v	typeref:struct:__anon19
+g_enclave_id_map	Untrusted_LocalAttestation/UntrustedEnclaveMessageExchange.cpp	/^std::map<sgx_enclave_id_t, uint32_t>g_enclave_id_map;$/;"	v
+g_session_count	LocalAttestationCode/EnclaveMessageExchange.cpp	/^uint32_t g_session_count = 0;$/;"	v
+g_session_id_tracker	LocalAttestationCode/EnclaveMessageExchange.cpp	/^session_id_tracker_t *g_session_id_tracker[MAX_SESSION_COUNT];$/;"	v
+g_src_session_info_map	Enclave1/Enclave1.cpp	/^std::map<sgx_enclave_id_t, dh_session_t>g_src_session_info_map;$/;"	v
+g_src_session_info_map	Enclave2/Enclave2.cpp	/^std::map<sgx_enclave_id_t, dh_session_t>g_src_session_info_map;$/;"	v
+g_src_session_info_map	Enclave3/Enclave3.cpp	/^std::map<sgx_enclave_id_t, dh_session_t>g_src_session_info_map;$/;"	v
+generate_response	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS generate_response(sgx_enclave_id_t src_enclave_id,$/;"	f
+generate_session_id	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS generate_session_id(uint32_t *session_id)$/;"	f
+get_message_exchange_response	Enclave1/Enclave1.cpp	/^uint32_t get_message_exchange_response(uint32_t inp_secret_data)$/;"	f
+get_message_exchange_response	Enclave2/Enclave2.cpp	/^uint32_t get_message_exchange_response(uint32_t inp_secret_data)$/;"	f
+get_message_exchange_response	Enclave3/Enclave3.cpp	/^uint32_t get_message_exchange_response(uint32_t inp_secret_data)$/;"	f
+in_progress	Include/dh_session_protocol.h	/^        }in_progress;$/;"	m	union:_la_dh_session_t::__anon16	typeref:struct:_la_dh_session_t::__anon16::__anon17
+inparam_buff	LocalAttestationCode/datatypes.h	/^    char inparam_buff[]; \/\/Serialized input parameters$/;"	m	struct:_ms_in_msg_exchange_t
+inparam_buff_len	LocalAttestationCode/datatypes.h	/^    uint32_t inparam_buff_len; \/\/Length of the serialized input parameters$/;"	m	struct:_ms_in_msg_exchange_t
+internal_param_struct_t	Enclave1/Utility_E1.h	/^}internal_param_struct_t;$/;"	t	typeref:struct:_internal_param_struct_t
+internal_param_struct_t	Enclave3/Utility_E3.h	/^}internal_param_struct_t;$/;"	t	typeref:struct:_internal_param_struct_t
+is_priv	Enclave1/Enclave1_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon2::__anon3	file:
+is_priv	Enclave2/Enclave2_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon7::__anon8	file:
+is_priv	Enclave3/Enclave3_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[8];$/;"	m	struct:__anon13::__anon14	file:
+is_priv	LocalAttestationCode/LocalAttestationCode_t.c	/^	struct {void* ecall_addr; uint8_t is_priv;} ecall_table[4];$/;"	m	struct:__anon19::__anon20	file:
+ivar1	Enclave1/Utility_E1.h	/^    uint32_t ivar1;$/;"	m	struct:_internal_param_struct_t
+ivar1	Enclave3/Utility_E3.h	/^    uint32_t ivar1;$/;"	m	struct:_internal_param_struct_t
+ivar2	Enclave1/Utility_E1.h	/^    uint32_t ivar2;$/;"	m	struct:_internal_param_struct_t
+ivar2	Enclave3/Utility_E3.h	/^    uint32_t ivar2;$/;"	m	struct:_internal_param_struct_t
+load_enclaves	App/App.cpp	/^uint32_t load_enclaves()$/;"	f
+marshal_input_parameters_e1_foo1	Enclave3/Utility_E3.cpp	/^uint32_t marshal_input_parameters_e1_foo1(uint32_t target_fn_id, uint32_t msg_type, external_param_struct_t *p_struct_var, size_t len_data, size_t len_ptr_data, char** marshalled_buff, size_t* marshalled_buff_len)$/;"	f
+marshal_input_parameters_e2_foo1	Enclave1/Utility_E1.cpp	/^uint32_t marshal_input_parameters_e2_foo1(uint32_t target_fn_id, uint32_t msg_type, uint32_t var1, uint32_t var2, char** marshalled_buff, size_t* marshalled_buff_len)$/;"	f
+marshal_input_parameters_e3_foo1	Enclave2/Utility_E2.cpp	/^uint32_t marshal_input_parameters_e3_foo1(uint32_t target_fn_id, uint32_t msg_type, param_struct_t *p_struct_var, char** marshalled_buff, size_t* marshalled_buff_len)$/;"	f
+marshal_message_exchange_request	Enclave1/Utility_E1.cpp	/^uint32_t marshal_message_exchange_request(uint32_t target_fn_id, uint32_t msg_type, uint32_t secret_data, char** marshalled_buff, size_t* marshalled_buff_len)$/;"	f
+marshal_message_exchange_request	Enclave2/Utility_E2.cpp	/^uint32_t marshal_message_exchange_request(uint32_t target_fn_id, uint32_t msg_type, uint32_t secret_data, char** marshalled_buff, size_t* marshalled_buff_len)$/;"	f
+marshal_message_exchange_request	Enclave3/Utility_E3.cpp	/^uint32_t marshal_message_exchange_request(uint32_t target_fn_id, uint32_t msg_type, uint32_t secret_data, char** marshalled_buff, size_t* marshalled_buff_len)$/;"	f
+marshal_message_exchange_response	Enclave1/Utility_E1.cpp	/^uint32_t marshal_message_exchange_response(char** resp_buffer, size_t* resp_length, uint32_t secret_response)$/;"	f
+marshal_message_exchange_response	Enclave2/Utility_E2.cpp	/^uint32_t marshal_message_exchange_response(char** resp_buffer, size_t* resp_length, uint32_t secret_response)$/;"	f
+marshal_message_exchange_response	Enclave3/Utility_E3.cpp	/^uint32_t marshal_message_exchange_response(char** resp_buffer, size_t* resp_length, uint32_t secret_response)$/;"	f
+marshal_retval_and_output_parameters_e1_foo1	Enclave1/Utility_E1.cpp	/^uint32_t marshal_retval_and_output_parameters_e1_foo1(char** resp_buffer, size_t* resp_length, uint32_t retval, external_param_struct_t *p_struct_var, size_t len_data, size_t len_ptr_data)$/;"	f
+marshal_retval_and_output_parameters_e2_foo1	Enclave2/Utility_E2.cpp	/^uint32_t marshal_retval_and_output_parameters_e2_foo1(char** resp_buffer, size_t* resp_length, uint32_t retval)$/;"	f
+marshal_retval_and_output_parameters_e3_foo1	Enclave3/Utility_E3.cpp	/^uint32_t marshal_retval_and_output_parameters_e3_foo1(char** resp_buffer, size_t* resp_length, uint32_t retval, param_struct_t *p_struct_var)$/;"	f
+message_aes_gcm_data	LocalAttestationCode/datatypes.h	/^    sgx_aes_gcm_data_t message_aes_gcm_data;    $/;"	m	struct:_secure_message_t
+message_exchange_response_generator	Enclave1/Enclave1.cpp	/^extern "C" uint32_t message_exchange_response_generator(char* decrypted_data,$/;"	f
+message_exchange_response_generator	Enclave2/Enclave2.cpp	/^extern "C" uint32_t message_exchange_response_generator(char* decrypted_data,$/;"	f
+message_exchange_response_generator	Enclave3/Enclave3.cpp	/^extern "C" uint32_t message_exchange_response_generator(char* decrypted_data,$/;"	f
+ms_cpuinfo	Enclave1/Enclave1_t.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_cpuinfo	Enclave1/Enclave1_u.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_cpuinfo	Enclave2/Enclave2_t.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_cpuinfo	Enclave2/Enclave2_u.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_cpuinfo	Enclave3/Enclave3_t.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_cpuinfo	Enclave3/Enclave3_u.c	/^	int* ms_cpuinfo;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_dest_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_dest_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_dest_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_dest_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_dest_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dest_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_dest_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_dest_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave1/Enclave1_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave1/Enclave1_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg1	Enclave1/Enclave1_u.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave1/Enclave1_u.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg1	Enclave2/Enclave2_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave2/Enclave2_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg1	Enclave2/Enclave2_u.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave2/Enclave2_u.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg1	Enclave3/Enclave3_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave3/Enclave3_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg1	Enclave3/Enclave3_u.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	Enclave3/Enclave3_u.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg1	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_dh_msg1	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_dh_msg1_t* ms_dh_msg1;$/;"	m	struct:ms_session_request_t	file:
+ms_dh_msg2	Enclave1/Enclave1_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	Enclave1/Enclave1_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg2	Enclave1/Enclave1_u.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	Enclave1/Enclave1_u.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg2	Enclave2/Enclave2_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	Enclave2/Enclave2_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg2	Enclave2/Enclave2_u.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	Enclave2/Enclave2_u.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg2	Enclave3/Enclave3_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	Enclave3/Enclave3_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg2	Enclave3/Enclave3_u.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	Enclave3/Enclave3_u.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg2	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg2	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_dh_msg2_t* ms_dh_msg2;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	Enclave1/Enclave1_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	Enclave1/Enclave1_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	Enclave1/Enclave1_u.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	Enclave1/Enclave1_u.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	Enclave2/Enclave2_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	Enclave2/Enclave2_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	Enclave2/Enclave2_u.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	Enclave2/Enclave2_u.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	Enclave3/Enclave3_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	Enclave3/Enclave3_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	Enclave3/Enclave3_u.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	Enclave3/Enclave3_u.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_dh_msg3	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_dh_msg3	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_dh_msg3_t* ms_dh_msg3;$/;"	m	struct:ms_exchange_report_t	file:
+ms_end_session_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	Enclave1/Enclave1_t.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	Enclave1/Enclave1_u.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	Enclave2/Enclave2_t.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	Enclave2/Enclave2_u.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	Enclave3/Enclave3_t.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	Enclave3/Enclave3_u.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_end_session_ocall_t {$/;"	s	file:
+ms_end_session_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_end_session_ocall_t;$/;"	t	typeref:struct:ms_end_session_ocall_t	file:
+ms_end_session_t	Enclave1/Enclave1_t.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	Enclave1/Enclave1_t.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_end_session_t	Enclave1/Enclave1_u.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	Enclave1/Enclave1_u.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_end_session_t	Enclave2/Enclave2_t.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	Enclave2/Enclave2_t.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_end_session_t	Enclave2/Enclave2_u.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	Enclave2/Enclave2_u.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_end_session_t	Enclave3/Enclave3_t.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	Enclave3/Enclave3_t.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_end_session_t	Enclave3/Enclave3_u.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	Enclave3/Enclave3_u.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_end_session_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_end_session_t {$/;"	s	file:
+ms_end_session_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_end_session_t;$/;"	t	typeref:struct:ms_end_session_t	file:
+ms_exchange_report_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	Enclave1/Enclave1_t.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	Enclave1/Enclave1_u.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	Enclave2/Enclave2_t.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	Enclave2/Enclave2_u.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	Enclave3/Enclave3_t.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	Enclave3/Enclave3_u.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_exchange_report_ocall_t {$/;"	s	file:
+ms_exchange_report_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_exchange_report_ocall_t;$/;"	t	typeref:struct:ms_exchange_report_ocall_t	file:
+ms_exchange_report_t	Enclave1/Enclave1_t.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	Enclave1/Enclave1_t.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_exchange_report_t	Enclave1/Enclave1_u.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	Enclave1/Enclave1_u.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_exchange_report_t	Enclave2/Enclave2_t.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	Enclave2/Enclave2_t.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_exchange_report_t	Enclave2/Enclave2_u.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	Enclave2/Enclave2_u.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_exchange_report_t	Enclave3/Enclave3_t.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	Enclave3/Enclave3_t.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_exchange_report_t	Enclave3/Enclave3_u.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	Enclave3/Enclave3_u.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_exchange_report_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_exchange_report_t {$/;"	s	file:
+ms_exchange_report_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_exchange_report_t;$/;"	t	typeref:struct:ms_exchange_report_t	file:
+ms_generate_response_t	Enclave1/Enclave1_t.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	Enclave1/Enclave1_t.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_generate_response_t	Enclave1/Enclave1_u.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	Enclave1/Enclave1_u.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_generate_response_t	Enclave2/Enclave2_t.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	Enclave2/Enclave2_t.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_generate_response_t	Enclave2/Enclave2_u.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	Enclave2/Enclave2_u.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_generate_response_t	Enclave3/Enclave3_t.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	Enclave3/Enclave3_t.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_generate_response_t	Enclave3/Enclave3_u.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	Enclave3/Enclave3_u.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_generate_response_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_generate_response_t {$/;"	s	file:
+ms_generate_response_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_generate_response_t;$/;"	t	typeref:struct:ms_generate_response_t	file:
+ms_in_msg_exchange_t	LocalAttestationCode/datatypes.h	/^} ms_in_msg_exchange_t;$/;"	t	typeref:struct:_ms_in_msg_exchange_t
+ms_leaf	Enclave1/Enclave1_t.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_leaf	Enclave1/Enclave1_u.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_leaf	Enclave2/Enclave2_t.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_leaf	Enclave2/Enclave2_u.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_leaf	Enclave3/Enclave3_t.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_leaf	Enclave3/Enclave3_u.c	/^	int ms_leaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_max_payload_size	Enclave1/Enclave1_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	Enclave1/Enclave1_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_max_payload_size	Enclave1/Enclave1_u.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	Enclave1/Enclave1_u.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_max_payload_size	Enclave2/Enclave2_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	Enclave2/Enclave2_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_max_payload_size	Enclave2/Enclave2_u.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	Enclave2/Enclave2_u.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_max_payload_size	Enclave3/Enclave3_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	Enclave3/Enclave3_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_max_payload_size	Enclave3/Enclave3_u.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	Enclave3/Enclave3_u.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_max_payload_size	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_max_payload_size	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t ms_max_payload_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_out_msg_exchange_t	LocalAttestationCode/datatypes.h	/^} ms_out_msg_exchange_t;$/;"	t	typeref:struct:_ms_out_msg_exchange_t
+ms_req_message	Enclave1/Enclave1_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	Enclave1/Enclave1_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message	Enclave1/Enclave1_u.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	Enclave1/Enclave1_u.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message	Enclave2/Enclave2_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	Enclave2/Enclave2_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message	Enclave2/Enclave2_u.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	Enclave2/Enclave2_u.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message	Enclave3/Enclave3_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	Enclave3/Enclave3_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message	Enclave3/Enclave3_u.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	Enclave3/Enclave3_u.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message	LocalAttestationCode/LocalAttestationCode_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message	LocalAttestationCode/LocalAttestationCode_t.c	/^	secure_message_t* ms_req_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	Enclave1/Enclave1_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	Enclave1/Enclave1_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	Enclave1/Enclave1_u.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	Enclave1/Enclave1_u.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	Enclave2/Enclave2_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	Enclave2/Enclave2_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	Enclave2/Enclave2_u.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	Enclave2/Enclave2_u.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	Enclave3/Enclave3_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	Enclave3/Enclave3_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	Enclave3/Enclave3_u.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	Enclave3/Enclave3_u.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_req_message_size	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_req_message_size	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t ms_req_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	Enclave1/Enclave1_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	Enclave1/Enclave1_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	Enclave1/Enclave1_u.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	Enclave1/Enclave1_u.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	Enclave2/Enclave2_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	Enclave2/Enclave2_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	Enclave2/Enclave2_u.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	Enclave2/Enclave2_u.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	Enclave3/Enclave3_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	Enclave3/Enclave3_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	Enclave3/Enclave3_u.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	Enclave3/Enclave3_u.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message	LocalAttestationCode/LocalAttestationCode_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message	LocalAttestationCode/LocalAttestationCode_t.c	/^	secure_message_t* ms_resp_message;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	Enclave1/Enclave1_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	Enclave1/Enclave1_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	Enclave1/Enclave1_u.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	Enclave1/Enclave1_u.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	Enclave2/Enclave2_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	Enclave2/Enclave2_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	Enclave2/Enclave2_u.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	Enclave2/Enclave2_u.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	Enclave3/Enclave3_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	Enclave3/Enclave3_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	Enclave3/Enclave3_u.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	Enclave3/Enclave3_u.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_resp_message_size	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_generate_response_t	file:
+ms_resp_message_size	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t ms_resp_message_size;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_close_session_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_create_session_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_retval	Enclave1/Enclave1_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_close_session_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_create_session_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_retval	Enclave1/Enclave1_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_close_session_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_create_session_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_retval	Enclave2/Enclave2_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_close_session_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_create_session_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_retval	Enclave2/Enclave2_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_close_session_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_create_session_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_retval	Enclave3/Enclave3_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	int ms_retval;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_close_session_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_create_session_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_retval	Enclave3/Enclave3_u.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_end_session_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_exchange_report_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_generate_response_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_retval	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_retval;$/;"	m	struct:ms_session_request_t	file:
+ms_self	Enclave1/Enclave1_t.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave1/Enclave1_t.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_self	Enclave1/Enclave1_u.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave1/Enclave1_u.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_self	Enclave2/Enclave2_t.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave2/Enclave2_t.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_self	Enclave2/Enclave2_u.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave2/Enclave2_u.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_self	Enclave3/Enclave3_t.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave3/Enclave3_t.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_self	Enclave3/Enclave3_u.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_self	Enclave3/Enclave3_u.c	/^	void* ms_self;$/;"	m	struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_send_request_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	Enclave1/Enclave1_t.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_send_request_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	Enclave1/Enclave1_u.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_send_request_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	Enclave2/Enclave2_t.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_send_request_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	Enclave2/Enclave2_u.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_send_request_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	Enclave3/Enclave3_t.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_send_request_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	Enclave3/Enclave3_u.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_send_request_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_send_request_ocall_t {$/;"	s	file:
+ms_send_request_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_send_request_ocall_t;$/;"	t	typeref:struct:ms_send_request_ocall_t	file:
+ms_session_id	Enclave1/Enclave1_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	Enclave1/Enclave1_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	Enclave1/Enclave1_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	Enclave1/Enclave1_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_id	Enclave1/Enclave1_u.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	Enclave1/Enclave1_u.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	Enclave1/Enclave1_u.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	Enclave1/Enclave1_u.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_id	Enclave2/Enclave2_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	Enclave2/Enclave2_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	Enclave2/Enclave2_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	Enclave2/Enclave2_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_id	Enclave2/Enclave2_u.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	Enclave2/Enclave2_u.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	Enclave2/Enclave2_u.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	Enclave2/Enclave2_u.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_id	Enclave3/Enclave3_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	Enclave3/Enclave3_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	Enclave3/Enclave3_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	Enclave3/Enclave3_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_id	Enclave3/Enclave3_u.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	Enclave3/Enclave3_u.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	Enclave3/Enclave3_u.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	Enclave3/Enclave3_u.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_session_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t ms_session_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_session_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_session_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	uint32_t* ms_session_id;$/;"	m	struct:ms_session_request_t	file:
+ms_session_request_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	Enclave1/Enclave1_t.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	Enclave1/Enclave1_u.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	Enclave2/Enclave2_t.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	Enclave2/Enclave2_u.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	Enclave3/Enclave3_t.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	Enclave3/Enclave3_u.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_session_request_ocall_t {$/;"	s	file:
+ms_session_request_ocall_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_session_request_ocall_t;$/;"	t	typeref:struct:ms_session_request_ocall_t	file:
+ms_session_request_t	Enclave1/Enclave1_t.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	Enclave1/Enclave1_t.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_session_request_t	Enclave1/Enclave1_u.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	Enclave1/Enclave1_u.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_session_request_t	Enclave2/Enclave2_t.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	Enclave2/Enclave2_t.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_session_request_t	Enclave2/Enclave2_u.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	Enclave2/Enclave2_u.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_session_request_t	Enclave3/Enclave3_t.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	Enclave3/Enclave3_t.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_session_request_t	Enclave3/Enclave3_u.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	Enclave3/Enclave3_u.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_session_request_t	LocalAttestationCode/LocalAttestationCode_t.c	/^typedef struct ms_session_request_t {$/;"	s	file:
+ms_session_request_t	LocalAttestationCode/LocalAttestationCode_t.c	/^} ms_session_request_t;$/;"	t	typeref:struct:ms_session_request_t	file:
+ms_sgx_oc_cpuidex_t	Enclave1/Enclave1_t.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave1/Enclave1_t.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_oc_cpuidex_t	Enclave1/Enclave1_u.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave1/Enclave1_u.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_oc_cpuidex_t	Enclave2/Enclave2_t.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave2/Enclave2_t.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_oc_cpuidex_t	Enclave2/Enclave2_u.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave2/Enclave2_u.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_oc_cpuidex_t	Enclave3/Enclave3_t.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave3/Enclave3_t.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_oc_cpuidex_t	Enclave3/Enclave3_u.c	/^typedef struct ms_sgx_oc_cpuidex_t {$/;"	s	file:
+ms_sgx_oc_cpuidex_t	Enclave3/Enclave3_u.c	/^} ms_sgx_oc_cpuidex_t;$/;"	t	typeref:struct:ms_sgx_oc_cpuidex_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave1/Enclave1_t.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave1/Enclave1_u.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave2/Enclave2_t.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave2/Enclave2_u.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave3/Enclave3_t.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_sgx_thread_set_multiple_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_multiple_untrusted_events_ocall_t	Enclave3/Enclave3_u.c	/^} ms_sgx_thread_set_multiple_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave1/Enclave1_t.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave1/Enclave1_u.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave2/Enclave2_t.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave2/Enclave2_u.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave3/Enclave3_t.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_sgx_thread_set_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_set_untrusted_event_ocall_t	Enclave3/Enclave3_u.c	/^} ms_sgx_thread_set_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave1/Enclave1_t.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave1/Enclave1_u.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave2/Enclave2_t.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave2/Enclave2_u.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave3/Enclave3_t.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_sgx_thread_setwait_untrusted_events_ocall_t {$/;"	s	file:
+ms_sgx_thread_setwait_untrusted_events_ocall_t	Enclave3/Enclave3_u.c	/^} ms_sgx_thread_setwait_untrusted_events_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave1/Enclave1_t.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave1/Enclave1_t.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave1/Enclave1_u.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave1/Enclave1_u.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave2/Enclave2_t.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave2/Enclave2_t.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave2/Enclave2_u.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave2/Enclave2_u.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave3/Enclave3_t.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave3/Enclave3_t.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave3/Enclave3_u.c	/^typedef struct ms_sgx_thread_wait_untrusted_event_ocall_t {$/;"	s	file:
+ms_sgx_thread_wait_untrusted_event_ocall_t	Enclave3/Enclave3_u.c	/^} ms_sgx_thread_wait_untrusted_event_ocall_t;$/;"	t	typeref:struct:ms_sgx_thread_wait_untrusted_event_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_src_enclave_id	Enclave1/Enclave1_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_src_enclave_id	Enclave2/Enclave2_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_close_session_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_create_session_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_enclave_to_enclave_call_t	file:
+ms_src_enclave_id	Enclave3/Enclave3_u.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_test_message_exchange_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_ocall_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_end_session_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_ocall_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_exchange_report_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_generate_response_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_send_request_ocall_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_ocall_t	file:
+ms_src_enclave_id	LocalAttestationCode/LocalAttestationCode_t.c	/^	sgx_enclave_id_t ms_src_enclave_id;$/;"	m	struct:ms_session_request_t	file:
+ms_subleaf	Enclave1/Enclave1_t.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_subleaf	Enclave1/Enclave1_u.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_subleaf	Enclave2/Enclave2_t.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_subleaf	Enclave2/Enclave2_u.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_subleaf	Enclave3/Enclave3_t.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_subleaf	Enclave3/Enclave3_u.c	/^	int ms_subleaf;$/;"	m	struct:ms_sgx_oc_cpuidex_t	file:
+ms_test_close_session_t	Enclave1/Enclave1_t.c	/^typedef struct ms_test_close_session_t {$/;"	s	file:
+ms_test_close_session_t	Enclave1/Enclave1_t.c	/^} ms_test_close_session_t;$/;"	t	typeref:struct:ms_test_close_session_t	file:
+ms_test_close_session_t	Enclave1/Enclave1_u.c	/^typedef struct ms_test_close_session_t {$/;"	s	file:
+ms_test_close_session_t	Enclave1/Enclave1_u.c	/^} ms_test_close_session_t;$/;"	t	typeref:struct:ms_test_close_session_t	file:
+ms_test_close_session_t	Enclave2/Enclave2_t.c	/^typedef struct ms_test_close_session_t {$/;"	s	file:
+ms_test_close_session_t	Enclave2/Enclave2_t.c	/^} ms_test_close_session_t;$/;"	t	typeref:struct:ms_test_close_session_t	file:
+ms_test_close_session_t	Enclave2/Enclave2_u.c	/^typedef struct ms_test_close_session_t {$/;"	s	file:
+ms_test_close_session_t	Enclave2/Enclave2_u.c	/^} ms_test_close_session_t;$/;"	t	typeref:struct:ms_test_close_session_t	file:
+ms_test_close_session_t	Enclave3/Enclave3_t.c	/^typedef struct ms_test_close_session_t {$/;"	s	file:
+ms_test_close_session_t	Enclave3/Enclave3_t.c	/^} ms_test_close_session_t;$/;"	t	typeref:struct:ms_test_close_session_t	file:
+ms_test_close_session_t	Enclave3/Enclave3_u.c	/^typedef struct ms_test_close_session_t {$/;"	s	file:
+ms_test_close_session_t	Enclave3/Enclave3_u.c	/^} ms_test_close_session_t;$/;"	t	typeref:struct:ms_test_close_session_t	file:
+ms_test_create_session_t	Enclave1/Enclave1_t.c	/^typedef struct ms_test_create_session_t {$/;"	s	file:
+ms_test_create_session_t	Enclave1/Enclave1_t.c	/^} ms_test_create_session_t;$/;"	t	typeref:struct:ms_test_create_session_t	file:
+ms_test_create_session_t	Enclave1/Enclave1_u.c	/^typedef struct ms_test_create_session_t {$/;"	s	file:
+ms_test_create_session_t	Enclave1/Enclave1_u.c	/^} ms_test_create_session_t;$/;"	t	typeref:struct:ms_test_create_session_t	file:
+ms_test_create_session_t	Enclave2/Enclave2_t.c	/^typedef struct ms_test_create_session_t {$/;"	s	file:
+ms_test_create_session_t	Enclave2/Enclave2_t.c	/^} ms_test_create_session_t;$/;"	t	typeref:struct:ms_test_create_session_t	file:
+ms_test_create_session_t	Enclave2/Enclave2_u.c	/^typedef struct ms_test_create_session_t {$/;"	s	file:
+ms_test_create_session_t	Enclave2/Enclave2_u.c	/^} ms_test_create_session_t;$/;"	t	typeref:struct:ms_test_create_session_t	file:
+ms_test_create_session_t	Enclave3/Enclave3_t.c	/^typedef struct ms_test_create_session_t {$/;"	s	file:
+ms_test_create_session_t	Enclave3/Enclave3_t.c	/^} ms_test_create_session_t;$/;"	t	typeref:struct:ms_test_create_session_t	file:
+ms_test_create_session_t	Enclave3/Enclave3_u.c	/^typedef struct ms_test_create_session_t {$/;"	s	file:
+ms_test_create_session_t	Enclave3/Enclave3_u.c	/^} ms_test_create_session_t;$/;"	t	typeref:struct:ms_test_create_session_t	file:
+ms_test_enclave_to_enclave_call_t	Enclave1/Enclave1_t.c	/^typedef struct ms_test_enclave_to_enclave_call_t {$/;"	s	file:
+ms_test_enclave_to_enclave_call_t	Enclave1/Enclave1_t.c	/^} ms_test_enclave_to_enclave_call_t;$/;"	t	typeref:struct:ms_test_enclave_to_enclave_call_t	file:
+ms_test_enclave_to_enclave_call_t	Enclave1/Enclave1_u.c	/^typedef struct ms_test_enclave_to_enclave_call_t {$/;"	s	file:
+ms_test_enclave_to_enclave_call_t	Enclave1/Enclave1_u.c	/^} ms_test_enclave_to_enclave_call_t;$/;"	t	typeref:struct:ms_test_enclave_to_enclave_call_t	file:
+ms_test_enclave_to_enclave_call_t	Enclave2/Enclave2_t.c	/^typedef struct ms_test_enclave_to_enclave_call_t {$/;"	s	file:
+ms_test_enclave_to_enclave_call_t	Enclave2/Enclave2_t.c	/^} ms_test_enclave_to_enclave_call_t;$/;"	t	typeref:struct:ms_test_enclave_to_enclave_call_t	file:
+ms_test_enclave_to_enclave_call_t	Enclave2/Enclave2_u.c	/^typedef struct ms_test_enclave_to_enclave_call_t {$/;"	s	file:
+ms_test_enclave_to_enclave_call_t	Enclave2/Enclave2_u.c	/^} ms_test_enclave_to_enclave_call_t;$/;"	t	typeref:struct:ms_test_enclave_to_enclave_call_t	file:
+ms_test_enclave_to_enclave_call_t	Enclave3/Enclave3_t.c	/^typedef struct ms_test_enclave_to_enclave_call_t {$/;"	s	file:
+ms_test_enclave_to_enclave_call_t	Enclave3/Enclave3_t.c	/^} ms_test_enclave_to_enclave_call_t;$/;"	t	typeref:struct:ms_test_enclave_to_enclave_call_t	file:
+ms_test_enclave_to_enclave_call_t	Enclave3/Enclave3_u.c	/^typedef struct ms_test_enclave_to_enclave_call_t {$/;"	s	file:
+ms_test_enclave_to_enclave_call_t	Enclave3/Enclave3_u.c	/^} ms_test_enclave_to_enclave_call_t;$/;"	t	typeref:struct:ms_test_enclave_to_enclave_call_t	file:
+ms_test_message_exchange_t	Enclave1/Enclave1_t.c	/^typedef struct ms_test_message_exchange_t {$/;"	s	file:
+ms_test_message_exchange_t	Enclave1/Enclave1_t.c	/^} ms_test_message_exchange_t;$/;"	t	typeref:struct:ms_test_message_exchange_t	file:
+ms_test_message_exchange_t	Enclave1/Enclave1_u.c	/^typedef struct ms_test_message_exchange_t {$/;"	s	file:
+ms_test_message_exchange_t	Enclave1/Enclave1_u.c	/^} ms_test_message_exchange_t;$/;"	t	typeref:struct:ms_test_message_exchange_t	file:
+ms_test_message_exchange_t	Enclave2/Enclave2_t.c	/^typedef struct ms_test_message_exchange_t {$/;"	s	file:
+ms_test_message_exchange_t	Enclave2/Enclave2_t.c	/^} ms_test_message_exchange_t;$/;"	t	typeref:struct:ms_test_message_exchange_t	file:
+ms_test_message_exchange_t	Enclave2/Enclave2_u.c	/^typedef struct ms_test_message_exchange_t {$/;"	s	file:
+ms_test_message_exchange_t	Enclave2/Enclave2_u.c	/^} ms_test_message_exchange_t;$/;"	t	typeref:struct:ms_test_message_exchange_t	file:
+ms_test_message_exchange_t	Enclave3/Enclave3_t.c	/^typedef struct ms_test_message_exchange_t {$/;"	s	file:
+ms_test_message_exchange_t	Enclave3/Enclave3_t.c	/^} ms_test_message_exchange_t;$/;"	t	typeref:struct:ms_test_message_exchange_t	file:
+ms_test_message_exchange_t	Enclave3/Enclave3_u.c	/^typedef struct ms_test_message_exchange_t {$/;"	s	file:
+ms_test_message_exchange_t	Enclave3/Enclave3_u.c	/^} ms_test_message_exchange_t;$/;"	t	typeref:struct:ms_test_message_exchange_t	file:
+ms_total	Enclave1/Enclave1_t.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_total	Enclave1/Enclave1_u.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_total	Enclave2/Enclave2_t.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_total	Enclave2/Enclave2_u.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_total	Enclave3/Enclave3_t.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_total	Enclave3/Enclave3_u.c	/^	size_t ms_total;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_waiter	Enclave1/Enclave1_t.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave1/Enclave1_t.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiter	Enclave1/Enclave1_u.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave1/Enclave1_u.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiter	Enclave2/Enclave2_t.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave2/Enclave2_t.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiter	Enclave2/Enclave2_u.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave2/Enclave2_u.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiter	Enclave3/Enclave3_t.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave3/Enclave3_t.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiter	Enclave3/Enclave3_u.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_set_untrusted_event_ocall_t	file:
+ms_waiter	Enclave3/Enclave3_u.c	/^	void* ms_waiter;$/;"	m	struct:ms_sgx_thread_setwait_untrusted_events_ocall_t	file:
+ms_waiters	Enclave1/Enclave1_t.c	/^	void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_waiters	Enclave1/Enclave1_u.c	/^	void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_waiters	Enclave2/Enclave2_t.c	/^	void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_waiters	Enclave2/Enclave2_u.c	/^	void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_waiters	Enclave3/Enclave3_t.c	/^	void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+ms_waiters	Enclave3/Enclave3_u.c	/^	void** ms_waiters;$/;"	m	struct:ms_sgx_thread_set_multiple_untrusted_events_ocall_t	file:
+msg_type	LocalAttestationCode/datatypes.h	/^    uint32_t msg_type; \/\/Type of Call E2E or general message exchange$/;"	m	struct:_ms_in_msg_exchange_t
+nr_ecall	Enclave1/Enclave1_t.c	/^	size_t nr_ecall;$/;"	m	struct:__anon2	file:
+nr_ecall	Enclave2/Enclave2_t.c	/^	size_t nr_ecall;$/;"	m	struct:__anon7	file:
+nr_ecall	Enclave3/Enclave3_t.c	/^	size_t nr_ecall;$/;"	m	struct:__anon13	file:
+nr_ecall	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t nr_ecall;$/;"	m	struct:__anon19	file:
+nr_ocall	Enclave1/Enclave1_t.c	/^	size_t nr_ocall;$/;"	m	struct:__anon4	file:
+nr_ocall	Enclave1/Enclave1_u.c	/^	size_t nr_ocall;$/;"	m	struct:__anon5	file:
+nr_ocall	Enclave2/Enclave2_t.c	/^	size_t nr_ocall;$/;"	m	struct:__anon9	file:
+nr_ocall	Enclave2/Enclave2_u.c	/^	size_t nr_ocall;$/;"	m	struct:__anon10	file:
+nr_ocall	Enclave3/Enclave3_t.c	/^	size_t nr_ocall;$/;"	m	struct:__anon15	file:
+nr_ocall	Enclave3/Enclave3_u.c	/^	size_t nr_ocall;$/;"	m	struct:__anon12	file:
+nr_ocall	LocalAttestationCode/LocalAttestationCode_t.c	/^	size_t nr_ocall;$/;"	m	struct:__anon21	file:
+num_funcs	Enclave1/Enclave1.cpp	/^    size_t num_funcs;$/;"	m	struct:__anon1	file:
+num_funcs	Enclave2/Enclave2.cpp	/^    size_t num_funcs;$/;"	m	struct:__anon6	file:
+num_funcs	Enclave3/Enclave3.cpp	/^    size_t num_funcs;$/;"	m	struct:__anon11	file:
+ocall_table_Enclave1	Enclave1/Enclave1_u.c	/^} ocall_table_Enclave1 = {$/;"	v	typeref:struct:__anon5	file:
+ocall_table_Enclave2	Enclave2/Enclave2_u.c	/^} ocall_table_Enclave2 = {$/;"	v	typeref:struct:__anon10	file:
+ocall_table_Enclave3	Enclave3/Enclave3_u.c	/^} ocall_table_Enclave3 = {$/;"	v	typeref:struct:__anon12	file:
+p_internal_struct	Enclave1/Utility_E1.h	/^    internal_param_struct_t *p_internal_struct;$/;"	m	struct:_external_param_struct_t
+p_internal_struct	Enclave3/Utility_E3.h	/^    internal_param_struct_t *p_internal_struct;$/;"	m	struct:_external_param_struct_t
+param_struct_t	Enclave2/Utility_E2.h	/^}param_struct_t;$/;"	t	typeref:struct:_param_struct_t
+param_struct_t	Enclave3/Utility_E3.h	/^}param_struct_t;$/;"	t	typeref:struct:_param_struct_t
+ret_outparam_buff	LocalAttestationCode/datatypes.h	/^    char ret_outparam_buff[]; \/\/Serialized return value and output parameters$/;"	m	struct:_ms_out_msg_exchange_t
+ret_outparam_buff_len	LocalAttestationCode/datatypes.h	/^    uint32_t ret_outparam_buff_len; \/\/Length of the serialized return value and output parameters$/;"	m	struct:_ms_out_msg_exchange_t
+retval_len	LocalAttestationCode/datatypes.h	/^    uint32_t retval_len; \/\/Length of the return value$/;"	m	struct:_ms_out_msg_exchange_t
+scanf_s	App/App.cpp	49;"	d	file:
+secure_message_t	LocalAttestationCode/datatypes.h	/^}secure_message_t;$/;"	t	typeref:struct:_secure_message_t
+send_request_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL send_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+send_request_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL send_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+send_request_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL send_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+send_request_ocall	LocalAttestationCode/LocalAttestationCode_t.c	/^sgx_status_t SGX_CDECL send_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+send_request_ocall	Untrusted_LocalAttestation/UntrustedEnclaveMessageExchange.cpp	/^ATTESTATION_STATUS send_request_ocall(sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id,secure_message_t* req_message, size_t req_message_size, size_t max_payload_size, secure_message_t* resp_message, size_t resp_message_size)$/;"	f
+send_request_receive_response	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS send_request_receive_response(sgx_enclave_id_t src_enclave_id,$/;"	f
+session_id	Include/dh_session_protocol.h	/^    uint32_t  session_id; \/\/Identifies the current session$/;"	m	struct:_la_dh_session_t
+session_id	LocalAttestationCode/datatypes.h	/^    uint32_t          session_id;$/;"	m	struct:_session_id_tracker_t
+session_id	LocalAttestationCode/datatypes.h	/^    uint32_t session_id; \/\/Session ID identifyting the session to which the message belongs$/;"	m	struct:_secure_message_t
+session_id_tracker_t	LocalAttestationCode/datatypes.h	/^}session_id_tracker_t;$/;"	t	typeref:struct:_session_id_tracker_t
+session_request	LocalAttestationCode/EnclaveMessageExchange.cpp	/^ATTESTATION_STATUS session_request(sgx_enclave_id_t src_enclave_id,$/;"	f
+session_request_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL session_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+session_request_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL session_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+session_request_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL session_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+session_request_ocall	LocalAttestationCode/LocalAttestationCode_t.c	/^sgx_status_t SGX_CDECL session_request_ocall(uint32_t* retval, sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+session_request_ocall	Untrusted_LocalAttestation/UntrustedEnclaveMessageExchange.cpp	/^ATTESTATION_STATUS session_request_ocall(sgx_enclave_id_t src_enclave_id, sgx_enclave_id_t dest_enclave_id, sgx_dh_msg1_t* dh_msg1, uint32_t* session_id)$/;"	f
+sgx_end_session	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_end_session(void* pms)$/;"	f	file:
+sgx_end_session	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_end_session(void* pms)$/;"	f	file:
+sgx_end_session	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_end_session(void* pms)$/;"	f	file:
+sgx_end_session	LocalAttestationCode/LocalAttestationCode_t.c	/^static sgx_status_t SGX_CDECL sgx_end_session(void* pms)$/;"	f	file:
+sgx_exchange_report	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_exchange_report(void* pms)$/;"	f	file:
+sgx_exchange_report	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_exchange_report(void* pms)$/;"	f	file:
+sgx_exchange_report	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_exchange_report(void* pms)$/;"	f	file:
+sgx_exchange_report	LocalAttestationCode/LocalAttestationCode_t.c	/^static sgx_status_t SGX_CDECL sgx_exchange_report(void* pms)$/;"	f	file:
+sgx_generate_response	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_generate_response(void* pms)$/;"	f	file:
+sgx_generate_response	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_generate_response(void* pms)$/;"	f	file:
+sgx_generate_response	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_generate_response(void* pms)$/;"	f	file:
+sgx_generate_response	LocalAttestationCode/LocalAttestationCode_t.c	/^static sgx_status_t SGX_CDECL sgx_generate_response(void* pms)$/;"	f	file:
+sgx_oc_cpuidex	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL sgx_oc_cpuidex(int cpuinfo[4], int leaf, int subleaf)$/;"	f
+sgx_oc_cpuidex	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL sgx_oc_cpuidex(int cpuinfo[4], int leaf, int subleaf)$/;"	f
+sgx_oc_cpuidex	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL sgx_oc_cpuidex(int cpuinfo[4], int leaf, int subleaf)$/;"	f
+sgx_session_request	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_session_request(void* pms)$/;"	f	file:
+sgx_session_request	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_session_request(void* pms)$/;"	f	file:
+sgx_session_request	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_session_request(void* pms)$/;"	f	file:
+sgx_session_request	LocalAttestationCode/LocalAttestationCode_t.c	/^static sgx_status_t SGX_CDECL sgx_session_request(void* pms)$/;"	f	file:
+sgx_test_close_session	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_test_close_session(void* pms)$/;"	f	file:
+sgx_test_close_session	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_test_close_session(void* pms)$/;"	f	file:
+sgx_test_close_session	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_test_close_session(void* pms)$/;"	f	file:
+sgx_test_create_session	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_test_create_session(void* pms)$/;"	f	file:
+sgx_test_create_session	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_test_create_session(void* pms)$/;"	f	file:
+sgx_test_create_session	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_test_create_session(void* pms)$/;"	f	file:
+sgx_test_enclave_to_enclave_call	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_test_enclave_to_enclave_call(void* pms)$/;"	f	file:
+sgx_test_enclave_to_enclave_call	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_test_enclave_to_enclave_call(void* pms)$/;"	f	file:
+sgx_test_enclave_to_enclave_call	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_test_enclave_to_enclave_call(void* pms)$/;"	f	file:
+sgx_test_message_exchange	Enclave1/Enclave1_t.c	/^static sgx_status_t SGX_CDECL sgx_test_message_exchange(void* pms)$/;"	f	file:
+sgx_test_message_exchange	Enclave2/Enclave2_t.c	/^static sgx_status_t SGX_CDECL sgx_test_message_exchange(void* pms)$/;"	f	file:
+sgx_test_message_exchange	Enclave3/Enclave3_t.c	/^static sgx_status_t SGX_CDECL sgx_test_message_exchange(void* pms)$/;"	f	file:
+sgx_thread_set_multiple_untrusted_events_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_multiple_untrusted_events_ocall(int* retval, const void** waiters, size_t total)$/;"	f
+sgx_thread_set_multiple_untrusted_events_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_multiple_untrusted_events_ocall(int* retval, const void** waiters, size_t total)$/;"	f
+sgx_thread_set_multiple_untrusted_events_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_multiple_untrusted_events_ocall(int* retval, const void** waiters, size_t total)$/;"	f
+sgx_thread_set_untrusted_event_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_untrusted_event_ocall(int* retval, const void* waiter)$/;"	f
+sgx_thread_set_untrusted_event_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_untrusted_event_ocall(int* retval, const void* waiter)$/;"	f
+sgx_thread_set_untrusted_event_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL sgx_thread_set_untrusted_event_ocall(int* retval, const void* waiter)$/;"	f
+sgx_thread_setwait_untrusted_events_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL sgx_thread_setwait_untrusted_events_ocall(int* retval, const void* waiter, const void* self)$/;"	f
+sgx_thread_setwait_untrusted_events_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL sgx_thread_setwait_untrusted_events_ocall(int* retval, const void* waiter, const void* self)$/;"	f
+sgx_thread_setwait_untrusted_events_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL sgx_thread_setwait_untrusted_events_ocall(int* retval, const void* waiter, const void* self)$/;"	f
+sgx_thread_wait_untrusted_event_ocall	Enclave1/Enclave1_t.c	/^sgx_status_t SGX_CDECL sgx_thread_wait_untrusted_event_ocall(int* retval, const void* self)$/;"	f
+sgx_thread_wait_untrusted_event_ocall	Enclave2/Enclave2_t.c	/^sgx_status_t SGX_CDECL sgx_thread_wait_untrusted_event_ocall(int* retval, const void* self)$/;"	f
+sgx_thread_wait_untrusted_event_ocall	Enclave3/Enclave3_t.c	/^sgx_status_t SGX_CDECL sgx_thread_wait_untrusted_event_ocall(int* retval, const void* self)$/;"	f
+status	Include/dh_session_protocol.h	/^    uint32_t  status; \/\/Indicates session is in progress, active or closed$/;"	m	struct:_la_dh_session_t
+table	Enclave1/Enclave1.cpp	/^    const void* table[1];$/;"	m	struct:__anon1	file:
+table	Enclave1/Enclave1_u.c	/^	void * table[9];$/;"	m	struct:__anon5	file:
+table	Enclave2/Enclave2.cpp	/^    const void* table[1];$/;"	m	struct:__anon6	file:
+table	Enclave2/Enclave2_u.c	/^	void * table[9];$/;"	m	struct:__anon10	file:
+table	Enclave3/Enclave3.cpp	/^    const void* table[1];$/;"	m	struct:__anon11	file:
+table	Enclave3/Enclave3_u.c	/^	void * table[9];$/;"	m	struct:__anon12	file:
+target_fn_id	LocalAttestationCode/datatypes.h	/^    uint32_t target_fn_id; \/\/Function Id to be called in Destination. Is valid only when msg_type=ENCLAVE_TO_ENCLAVE_CALL$/;"	m	struct:_ms_in_msg_exchange_t
+test_close_session	Enclave1/Enclave1.cpp	/^uint32_t test_close_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_close_session	Enclave2/Enclave2.cpp	/^uint32_t test_close_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_close_session	Enclave3/Enclave3.cpp	/^uint32_t test_close_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_create_session	Enclave1/Enclave1.cpp	/^uint32_t test_create_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_create_session	Enclave2/Enclave2.cpp	/^uint32_t test_create_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_create_session	Enclave3/Enclave3.cpp	/^uint32_t test_create_session(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_enclave_to_enclave_call	Enclave1/Enclave1.cpp	/^uint32_t test_enclave_to_enclave_call(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_enclave_to_enclave_call	Enclave2/Enclave2.cpp	/^uint32_t test_enclave_to_enclave_call(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_enclave_to_enclave_call	Enclave3/Enclave3.cpp	/^uint32_t test_enclave_to_enclave_call(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_message_exchange	Enclave1/Enclave1.cpp	/^uint32_t test_message_exchange(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_message_exchange	Enclave2/Enclave2.cpp	/^uint32_t test_message_exchange(sgx_enclave_id_t src_enclave_id,$/;"	f
+test_message_exchange	Enclave3/Enclave3.cpp	/^uint32_t test_message_exchange(sgx_enclave_id_t src_enclave_id,$/;"	f
+umarshal_message_exchange_request	Enclave1/Utility_E1.cpp	/^uint32_t umarshal_message_exchange_request(uint32_t* inp_secret_data, ms_in_msg_exchange_t* ms)$/;"	f
+umarshal_message_exchange_request	Enclave2/Utility_E2.cpp	/^uint32_t umarshal_message_exchange_request(uint32_t* inp_secret_data, ms_in_msg_exchange_t* ms)$/;"	f
+umarshal_message_exchange_request	Enclave3/Utility_E3.cpp	/^uint32_t umarshal_message_exchange_request(uint32_t* inp_secret_data, ms_in_msg_exchange_t* ms)$/;"	f
+umarshal_message_exchange_response	Enclave1/Utility_E1.cpp	/^uint32_t umarshal_message_exchange_response(char* out_buff, char** secret_response)$/;"	f
+umarshal_message_exchange_response	Enclave2/Utility_E2.cpp	/^uint32_t umarshal_message_exchange_response(char* out_buff, char** secret_response)$/;"	f
+umarshal_message_exchange_response	Enclave3/Utility_E3.cpp	/^uint32_t umarshal_message_exchange_response(char* out_buff, char** secret_response)$/;"	f
+unmarshal_input_parameters_e1_foo1	Enclave1/Utility_E1.cpp	/^uint32_t unmarshal_input_parameters_e1_foo1(external_param_struct_t *pstruct, ms_in_msg_exchange_t* ms)$/;"	f
+unmarshal_input_parameters_e2_foo1	Enclave2/Utility_E2.cpp	/^uint32_t unmarshal_input_parameters_e2_foo1(uint32_t* var1, uint32_t* var2, ms_in_msg_exchange_t* ms)$/;"	f
+unmarshal_input_parameters_e3_foo1	Enclave3/Utility_E3.cpp	/^uint32_t unmarshal_input_parameters_e3_foo1(param_struct_t *pstruct, ms_in_msg_exchange_t* ms)$/;"	f
+unmarshal_retval_and_output_parameters_e1_foo1	Enclave3/Utility_E3.cpp	/^uint32_t unmarshal_retval_and_output_parameters_e1_foo1(char* out_buff, external_param_struct_t *p_struct_var, char** retval)$/;"	f
+unmarshal_retval_and_output_parameters_e2_foo1	Enclave1/Utility_E1.cpp	/^uint32_t unmarshal_retval_and_output_parameters_e2_foo1(char* out_buff, char** retval)$/;"	f
+unmarshal_retval_and_output_parameters_e3_foo1	Enclave2/Utility_E2.cpp	/^uint32_t unmarshal_retval_and_output_parameters_e3_foo1(char* out_buff, param_struct_t *p_struct_var, char** retval)$/;"	f
+var1	Enclave1/Utility_E1.h	/^    uint32_t var1;$/;"	m	struct:_external_param_struct_t
+var1	Enclave2/Utility_E2.h	/^    uint32_t var1;$/;"	m	struct:_param_struct_t
+var1	Enclave3/Utility_E3.h	/^    uint32_t var1;$/;"	m	struct:_external_param_struct_t
+var1	Enclave3/Utility_E3.h	/^    uint32_t var1;$/;"	m	struct:_param_struct_t
+var2	Enclave1/Utility_E1.h	/^    uint32_t var2;$/;"	m	struct:_external_param_struct_t
+var2	Enclave2/Utility_E2.h	/^    uint32_t var2;$/;"	m	struct:_param_struct_t
+var2	Enclave3/Utility_E3.h	/^    uint32_t var2;$/;"	m	struct:_external_param_struct_t
+var2	Enclave3/Utility_E3.h	/^    uint32_t var2;$/;"	m	struct:_param_struct_t
+verify_peer_enclave_trust	Enclave1/Enclave1.cpp	/^extern "C" uint32_t verify_peer_enclave_trust(sgx_dh_session_enclave_identity_t* peer_enclave_identity)$/;"	f
+verify_peer_enclave_trust	Enclave2/Enclave2.cpp	/^extern "C" uint32_t verify_peer_enclave_trust(sgx_dh_session_enclave_identity_t* peer_enclave_identity)$/;"	f
+verify_peer_enclave_trust	Enclave3/Enclave3.cpp	/^extern "C" uint32_t verify_peer_enclave_trust(sgx_dh_session_enclave_identity_t* peer_enclave_identity)$/;"	f
+waitForKeyPress	App/App.cpp	/^void waitForKeyPress()$/;"	f

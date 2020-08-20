@@ -1,0 +1,10 @@
+prefix=/home/jinu/Desktop/SGX/linux-sgx-master/sgxsdk
+includedir=${prefix}/include
+libdir=${prefix}/lib64
+
+Name: libsgx_urts_sim
+Description: SGX uRTS simulation library
+Version: 2.1.3.44322
+Cflags: -I${includedir}
+Libs: -L${libdir} -lsgx_urts_sim
+Libs.private: -lsgx_uae_service_sim
